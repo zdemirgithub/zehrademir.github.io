@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Zehra Demir - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header with Navigation -->
   <header>
+    <div class="logo">
+      <h1>Zehra Demir</h1>
+    </div>
     <nav>
       <ul>
         <li><a href="#about" class="nav-link">About</a></li>
@@ -24,13 +27,8 @@
   <!-- About Section -->
   <section id="about" class="about">
     <div class="about-container">
-      <h1 class="section-title animate__animated animate__fadeIn">About Me</h1>
-      <p class="about-text animate__animated animate__fadeIn">Hi, I'm Zehra Demir, a passionate Full Stack Developer with expertise in building scalable, performance-driven applications. With experience across a range of technologies and frameworks, I thrive in dynamic environments where I can solve complex problems and innovate.</p>
-      <div class="about-links">
-        <a href="https://github.com/zdemirgithub" class="button">GitHub</a>
-        <a href="https://www.linkedin.com/in/zehra-demir-74b307308" class="button">LinkedIn</a>
-        <a href="mailto:zehrademir.gm@gmail.com" class="button">Email</a>
-      </div>
+      <h1 class="section-title">About Me</h1>
+      <p>Hi, I’m Zehra Demir, a Full Stack Developer with extensive experience in building innovative web applications. I specialize in working with modern frameworks and technologies, delivering optimized and scalable solutions.</p>
     </div>
   </section>
 
@@ -38,12 +36,17 @@
   <section id="projects" class="projects">
     <div class="projects-container">
       <h1 class="section-title">My Projects</h1>
+
+      <!-- Project 1 -->
       <div class="project" id="project1">
-        <h2 class="project-title">Project 1</h2>
-        <div class="project-details">A brief description of the project and its functionalities.</div>
+        <h2 class="project-title">E-Commerce Web App</h2>
+        <p>Technologies: React.js, Node.js, MongoDB, Express.js</p>
+        <p class="project-description">An e-commerce platform that allows users to browse and purchase products online with secure payment integration.</p>
         <div class="project-visualization" id="project-graph1"></div>
       </div>
-      <!-- Repeat for 9 more projects -->
+
+      <!-- Repeat for other projects -->
+
     </div>
   </section>
 
@@ -60,7 +63,7 @@
     </div>
   </section>
 
-  <!-- Footer Section -->
+  <!-- Footer -->
   <footer>
     <p>&copy; 2024 Zehra Demir | All Rights Reserved</p>
   </footer>

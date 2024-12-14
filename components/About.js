@@ -1,10 +1,10 @@
-const About = () => (
-  <section id="about" className="py-16 px-8 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white">
-    <div className="max-w-screen-xl mx-auto text-center">
-      <h2 className="text-4xl font-bold mb-4">About Me</h2>
-      <p className="text-lg">I am a passionate software engineer with a diverse background in full-stack development. I specialize in building scalable applications and working with modern frameworks and technologies like Next.js, React, and more.</p>
-    </div>
-  </section>
-);
+const About = () => {
+  return (
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am Zehra Demir, a software engineer with a passion for full-stack development, machine learning, and blockchain technology. I have worked in top tech companies and built several projects in diverse domains.</p>
+    </section>
+  );
+};
 
 export default About;

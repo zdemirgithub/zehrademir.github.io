@@ -3,54 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Zehra Demir - Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header with Navigation -->
   <header>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about">
+  <!-- About Section -->
+  <section id="about" class="about">
     <div class="about-container">
-      <h1>About Me</h1>
-      <p>I'm Zehra Demir, a passionate Full Stack Developer with a diverse background...</p>
-      <a href="https://github.com/zdemirgithub" class="button">GitHub</a>
-      <a href="https://www.linkedin.com/in/zehra-demir-74b307308" class="button">LinkedIn</a>
-      <a href="mailto:zehrademir.gm@gmail.com" class="button">Email</a>
+      <h1 class="section-title animate__animated animate__fadeIn">About Me</h1>
+      <p class="about-text animate__animated animate__fadeIn">Hi, I'm Zehra Demir, a passionate Full Stack Developer with expertise in building scalable, performance-driven applications. With experience across a range of technologies and frameworks, I thrive in dynamic environments where I can solve complex problems and innovate.</p>
+      <div class="about-links">
+        <a href="https://github.com/zdemirgithub" class="button">GitHub</a>
+        <a href="https://www.linkedin.com/in/zehra-demir-74b307308" class="button">LinkedIn</a>
+        <a href="mailto:zehrademir.gm@gmail.com" class="button">Email</a>
+      </div>
     </div>
   </section>
 
-  <section id="projects">
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
     <div class="projects-container">
-      <h1>My Projects</h1>
-      <div class="project" id="project1"></div>
-      <div class="project" id="project2"></div>
-      <!-- Repeat for 10 projects -->
+      <h1 class="section-title">My Projects</h1>
+      <div class="project" id="project1">
+        <h2 class="project-title">Project 1</h2>
+        <div class="project-details">A brief description of the project and its functionalities.</div>
+        <div class="project-visualization" id="project-graph1"></div>
+      </div>
+      <!-- Repeat for 9 more projects -->
     </div>
   </section>
 
-  <section id="contact">
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
     <div class="contact-container">
-      <h1>Contact Me</h1>
-      <form action="your_backend_script" method="POST">
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="email" name="email" placeholder="Your Email">
-        <textarea name="message" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
+      <h1 class="section-title">Contact Me</h1>
+      <form action="your_backend_script" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" class="input-field">
+        <input type="email" name="email" placeholder="Your Email" class="input-field">
+        <textarea name="message" placeholder="Your Message" class="input-field"></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
       </form>
     </div>
   </section>
 
+  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2024 Zehra Demir. All Rights Reserved.</p>
+    <p>&copy; 2024 Zehra Demir | All Rights Reserved</p>
   </footer>
 
   <script src="scripts.js"></script>

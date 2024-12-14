@@ -1,22 +1,18 @@
 /* General Style */
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f0f4f1; /* Light beige background */
-    color: #3a3d3b; /* Dark grey for text */
+    background-color: #e2f1f8; /* Light pastel blue background */
+    color: #ffffff; /* White text */
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    color: #f9f9f9; /* Dark greenish blue for headings */
-}
-
-h2, h3 {
-    color: #2f4f4f; /* Dark greenish blue for headings */
+h1, h2, h3 {
+    color: #ffffff; /* White headings */
 }
 
 a {
-    color: #2a8b8f; /* Pastel teal color */
+    color: #9ec8d5; /* Light pastel blue for links */
     text-decoration: none;
 }
 
@@ -27,7 +23,7 @@ ul {
 
 /* Header */
 header {
-    background-color: #3b6b6b; /* Muted dark green-blue */
+    background-color: #4d8a9c; /* Muted pastel blue */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -49,76 +45,42 @@ header nav a {
     font-size: 1rem;
     text-transform: uppercase;
     padding: 10px 20px;
-    background-color: #7a9e9f;
+    background-color: #8db1c1;
     border-radius: 30px;
     transition: background-color 0.3s ease;
 }
 
 header nav a:hover {
-    background-color: #4c6a71; /* Dark green-blue on hover */
+    background-color: #557f8d; /* Darker pastel blue on hover */
 }
 
-/* Sidebar */
-.sidebar {
-    width: 250px;
-    background-color: #fff; /* White background for sidebar */
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for the sidebar */
-    overflow-y: auto;
-    z-index: 1; /* Ensure it stays above content */
-}
-
-.sidebar h3 {
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 1.2rem;
-    color: #2f4f4f;
-}
-
-.sidebar ul {
+/* Main content section */
+.main-content {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.sidebar li {
-    font-family: 'Comic Sans MS', sans-serif;
-    color: #3a3d3b;
-    font-size: 0.9rem; /* Smaller font size for the list items */
-}
-
-.sidebar li a {
-    color: #2a8b8f;
-}
-
-.sidebar li a:hover {
-    color: #7a9e9f; /* Pastel teal shade */
-}
-
-.sidebar .certifications ul,
-.sidebar .education ul {
-    margin-top: 20px;
-    font-size: 0.8rem; /* Smaller font size for certifications */
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
 }
 
 /* About Me Section */
 .about {
-    background-color: #d3e5e2; /* Soft pastel green */
-    padding: 40px 0;
+    background-color: #a7cbe5; /* Light pastel blue */
+    padding: 40px 20px;
     font-family: 'Comic Sans MS', sans-serif;
     font-size: 1.1rem;
-    color: #3b3d3a;
-    margin-left: 260px; /* To adjust for the sidebar */
+    color: #ffffff;
+    flex: 1;
+}
+
+.about p {
+    line-height: 1.6;
 }
 
 /* Projects Section */
 .projects {
     padding: 40px 0;
-    background-color: #f7f9f7; /* Light grey background */
-    margin-left: 260px; /* Sidebar adjustment */
+    background-color: #b8d6e8; /* Soft pastel blue for background */
+    margin-left: 0; /* No sidebar, aligned to full width */
 }
 
 .project-row {
@@ -131,7 +93,7 @@ header nav a:hover {
 
 .project-card {
     width: calc(50% - 15px); /* Each card takes 50% of the row width */
-    background-color: #e5f7f2; /* Soft pastel background for project cards */
+    background-color: #cfe3f3; /* Soft pastel blue for project cards */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 8px;
@@ -140,13 +102,13 @@ header nav a:hover {
 
 .project-description p {
     font-size: 0.95rem;
-    color: #4e5d5b;
+    color: #ffffff;
 }
 
 /* Project Link Button */
 .learn-more-btn {
     display: inline-block;
-    background-color: #2a8b8f; /* Pastel teal */
+    background-color: #8db1c1; /* Pastel blue */
     color: white;
     padding: 10px 20px;
     border-radius: 30px;
@@ -155,12 +117,12 @@ header nav a:hover {
 }
 
 .learn-more-btn:hover {
-    background-color: #4c6a71; /* Dark green-blue on hover */
+    background-color: #557f8d; /* Darker pastel blue on hover */
 }
 
 /* Contact Section */
 .contact {
-    background-color: #3b6b6b; /* Muted dark green-blue */
+    background-color: #4d8a9c; /* Muted pastel blue */
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -173,12 +135,12 @@ header nav a:hover {
 }
 
 .contact-links a:hover {
-    color: #7a9e9f; /* Pastel teal */
+    color: #9ec8d5; /* Light pastel blue on hover */
 }
 
 /* Footer */
 footer {
-    background-color: #4c6a71; /* Dark green-blue */
+    background-color: #557f8d; /* Dark pastel blue */
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -187,7 +149,7 @@ footer {
 /* Buttons in header */
 .nav-btn {
     padding: 10px 20px;
-    background-color: #7a9e9f; /* Pastel teal */
+    background-color: #8db1c1; /* Pastel blue */
     border-radius: 30px;
     font-weight: bold;
     color: white;
@@ -195,19 +157,14 @@ footer {
 }
 
 .nav-btn:hover {
-    background-color: #4c6a71; /* Dark green-blue on hover */
+    background-color: #557f8d; /* Dark pastel blue on hover */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
     .main-content {
-        margin-left: 0;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .project-card {

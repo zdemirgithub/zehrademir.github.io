@@ -1,159 +1,290 @@
 // Project 1: E-Commerce Web App
-const ctx1 = document.getElementById('chart1').getContext('2d');
-const chart1 = new Chart(ctx1, {
-  type: 'pie',
-  data: {
-    labels: ['JavaScript', 'Node.js', 'MongoDB'],
-    datasets: [{
-      label: 'Programming Languages Used',
-      data: [70, 20, 10],
-      backgroundColor: ['#f9c5d1', '#a1c4fd', '#f6e7d7'], // Pastel colors
-      borderColor: '#fff',
-      borderWidth: 1
-    }]
-  }
+var ctx1 = document.getElementById('chart1').getContext('2d');
+var chart1 = new Chart(ctx1, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'Node.js', 'MongoDB'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [70, 20, 10],
+            backgroundColor: ['#FFB3BA', '#FFDFBA', '#FFFAF1'], // Pastel colors
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
 });
 
 // Project 2: Real-Time Chat Application
-const ctx2 = document.getElementById('chart2').getContext('2d');
-const chart2 = new Chart(ctx2, {
-  type: 'pie',
-  data: {
-    labels: ['JavaScript', 'Node.js', 'Socket.io', 'HTML/CSS'],
-    datasets: [{
-      label: 'Programming Languages Used',
-      data: [40, 30, 20, 10],
-      backgroundColor: ['#ffb3b3', '#c2d6ff', '#f7e0a1', '#c4f2a1'], // Pastel colors
-      borderColor: '#fff',
-      borderWidth: 1
-    }]
-  }
+var ctx2 = document.getElementById('chart2').getContext('2d');
+var chart2 = new Chart(ctx2, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'Vue.js', 'Firebase'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [60, 30, 10],
+            backgroundColor: ['#D0E9E3', '#F1E3E3', '#F9F4E0'], // Pastel colors
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
 });
 
 // Project 3: Task Management System
-const ctx3 = document.getElementById('chart3').getContext('2d');
-const chart3 = new Chart(ctx3, {
-  type: 'pie',
-  data: {
-    labels: ['Python', 'Flask', 'PostgreSQL', 'HTML/CSS'],
-    datasets: [{
-      label: 'Programming Languages Used',
-      data: [60, 20, 10, 10],
-      backgroundColor: ['#b8f2e6', '#ffb3cc', '#ffdb99', '#f3e6f5'], // Pastel colors
-      borderColor: '#fff',
-      borderWidth: 1
-    }]
-  }
+var ctx3 = document.getElementById('chart3').getContext('2d');
+var chart3 = new Chart(ctx3, {
+    type: 'pie',
+    data: {
+        labels: ['Python', 'Flask', 'PostgreSQL'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [50, 30, 20],
+            backgroundColor: ['#D8F1F9', '#A8E8F1', '#C8F9E8'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
 });
 
 // Project 4: Blogging Platform
-const ctx4 = document.getElementById('chart4').getContext('2d');
-const chart4 = new Chart(ctx4, {
-  type: 'pie',
-  data: {
-    labels: ['Ruby', 'Rails', 'PostgreSQL', 'HTML/CSS'],
-    datasets: [{
-      label: 'Programming Languages Used',
-      data: [50, 30, 10, 10],
-      backgroundColor: ['#ffccff', '#99ff99', '#e6ccff', '#ffe6b3'], // Pastel colors
-      borderColor: '#fff',
-      borderWidth: 1
-    }]
-  }
+var ctx4 = document.getElementById('chart4').getContext('2d');
+var chart4 = new Chart(ctx4, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'React', 'Node.js', 'MongoDB'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [40, 30, 20, 10],
+            backgroundColor: ['#D1E7F7', '#FFDFD3', '#F5E1D4', '#E0F7E7'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
 });
 
-// Project 5: Fitness Tracker
-const ctx5 = document.getElementById('chart5').getContext('2d');
-const chart5 = new Chart(ctx5, {
-  type: 'pie',
-  data: {
-    labels: ['React.js', 'Node.js', 'MongoDB', 'HTML/CSS'],
-    datasets: [{
-      label: 'Programming Languages Used',
-      data: [50, 20, 20, 10],
-      backgroundColor: ['#d8f4e8', '#ffd699', '#ffccff', '#ffcccc'], // Pastel colors
-      borderColor: '#fff',
-      borderWidth: 1
-    }]
-  }
+// Project 5: Weather App
+var ctx5 = document.getElementById('chart5').getContext('2d');
+var chart5 = new Chart(ctx5, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'React', 'OpenWeather API'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [60, 30, 10],
+            backgroundColor: ['#FFDDC1', '#E2F0CB', '#F3E9D2'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
 });
 
 // Project 6: Portfolio Website
-const ctx6 = document.getElementById('chart6').getContext('2d');
-const chart6 = new Chart(ctx6, {
-  type: 'pie',
-  data: {
-    labels: ['HTML', 'CSS', 'JavaScript'],
-    datasets: [{
-      label: 'Programming Languages Used',
-      data: [50, 30, 20],
-      backgroundColor: ['#ffcc99', '#ffb3b3', '#c2f0ff'], // Pastel colors
-      borderColor: '#fff',
-      borderWidth: 1
-    }]
-  }
+var ctx6 = document.getElementById('chart6').getContext('2d');
+var chart6 = new Chart(ctx6, {
+    type: 'pie',
+    data: {
+        labels: ['HTML', 'CSS', 'JavaScript', 'React'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [25, 25, 25, 25],
+            backgroundColor: ['#D5F4E6', '#F0E4D7', '#FFBBF2', '#FFF9C4'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
 });
 
-// Project 7: Weather Forecasting App
-const ctx7 = document.getElementById('chart7').getContext('2d');
-const chart7 = new Chart(ctx7, {
-  type: 'pie',
-  data: {
-    labels: ['JavaScript', 'OpenWeather API', 'HTML/CSS'],
-    datasets: [{
-      label: 'Programming Languages Used',
-      data: [60, 30, 10],
-      backgroundColor: ['#a2e6ff', '#ffccff', '#ffebc2'], // Pastel colors
-      borderColor: '#fff',
-      borderWidth: 1
-    }]
-  }
+// Project 7: Online Learning Platform
+var ctx7 = document.getElementById('chart7').getContext('2d');
+var chart7 = new Chart(ctx7, {
+    type: 'pie',
+    data: {
+        labels: ['PHP', 'MySQL', 'JavaScript'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [50, 40, 10],
+            backgroundColor: ['#F5D0A9', '#B9D7D5', '#D9E0D1'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
 });
 
-// Project 8: Task Automation Tool
-const ctx8 = document.getElementById('chart8').getContext('2d');
-const chart8 = new Chart(ctx8, {
-  type: 'pie',
-  data: {
-    labels: ['Python', 'Flask', 'SQLite', 'HTML/CSS'],
-    datasets: [{
-      label: 'Programming Languages Used',
-      data: [60, 20, 10, 10],
-      backgroundColor: ['#d6f7b6', '#f9ccff', '#ffb3b3', '#c2e0ff'], // Pastel colors
-      borderColor: '#fff',
-      borderWidth: 1
-    }]
-  }
+// Project 8: Fitness Tracker App
+var ctx8 = document.getElementById('chart8').getContext('2d');
+var chart8 = new Chart(ctx8, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'React Native', 'Firebase'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [50, 40, 10],
+            backgroundColor: ['#E2F7F4', '#F1E0C8', '#FFDCFB'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
 });
 
-// Project 9: Social Media Platform
-const ctx9 = document.getElementById('chart9').getContext('2d');
-const chart9 = new Chart(ctx9, {
-  type: 'pie',
-  data: {
-    labels: ['React.js', 'Node.js', 'MongoDB', 'CSS'],
-    datasets: [{
-      label: 'Programming Languages Used',
-      data: [50, 30, 10, 10],
-      backgroundColor: ['#e6f7d9', '#f2ccff', '#b3f0ff', '#ffb3cc'], // Pastel colors
-      borderColor: '#fff',
-      borderWidth: 1
-    }]
-  }
+// Project 9: Online Shopping Cart
+var ctx9 = document.getElementById('chart9').getContext('2d');
+var chart9 = new Chart(ctx9, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'Node.js', 'Express', 'MongoDB'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [35, 25, 20, 20],
+            backgroundColor: ['#D1F5D3', '#F9F5D7', '#F0D7E5', '#FFEBE9'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
 });
 
-// Project 10: Chatbot Integration
-const ctx10 = document.getElementById('chart10').getContext('2d');
-const chart10 = new Chart(ctx10, {
-  type: 'pie',
-  data: {
-    labels: ['JavaScript', 'Node.js', 'AI/ML', 'HTML/CSS'],
-    datasets: [{
-      label: 'Programming Languages Used',
-      data: [50, 30, 10, 10],
-      backgroundColor: ['#ffb3d9', '#c2e0ff', '#ffebc2', '#d9f7c1'], // Pastel colors
-      borderColor: '#fff',
-      borderWidth: 1
-    }]
-  }
+// Project 10: Social Media Dashboard
+var ctx10 = document.getElementById('chart10').getContext('2d');
+var chart10 = new Chart(ctx10, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'React', 'Redux', 'Node.js'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [40, 30, 20, 10],
+            backgroundColor: ['#F7D7E4', '#E2F5D4', '#FFF3E0', '#D8E4F0'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
 });
+

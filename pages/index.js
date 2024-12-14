@@ -1,30 +1,54 @@
-import Link from 'next/link'
+// pages/index.js
+
+import Head from 'next/head';
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
+import Card from '../components/Card';
 
 export default function Home() {
-  return (
-    <div className="bg-pastel-100 min-h-screen">
-      <header className="text-center py-12 bg-pastel-200">
-        <h1 className="text-4xl font-bold text-neon-green">Zehra Demir</h1>
-        <p className="mt-4 text-lg text-pastel-700">Full-stack Software Engineer | Passionate about building scalable, innovative systems</p>
-      </header>
+  const projects = [
+    {
+      name: 'Next.js Portfolio',
+      stack: 'Next.js, React.js, Tailwind CSS, Vercel',
+      deployment: 'Vercel',
+      specs: 'Responsive, Dynamic, Dark Mode',
+      category: 'Frontend',
+      link: '#',
+    },
+    {
+      name: 'AI-Powered Chatbot',
+      stack: 'Python, TensorFlow, Flask, PostgreSQL',
+      deployment: 'AWS EC2',
+      specs: 'Natural Language Processing, Speech Recognition',
+      category: 'Backend',
+      link: '#',
+    },
+    {
+      name: 'E-commerce App',
+      stack: 'React.js, Redux, Node.js, MongoDB',
+      deployment: 'Netlify',
+      specs: 'Product Management, User Authentication',
+      category: 'Full-Stack',
+      link: '#',
+    },
+    // Add 7 more projects similarly...
+  ];
 
-      <div className="container mx-auto px-4">
-        <section className="mt-8">
-          <h2 className="text-3xl font-bold text-pastel-700">My Projects</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
-            {/* Project Cards will be dynamically added here */}
-            <Link href="/projects">
-              <a className="card">
-                <div className="bg-neon-green text-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all">
-                  <h3 className="text-xl font-bold">Project 1</h3>
-                  <p className="mt-2">Next.js Full-stack Web App</p>
-                </div>
-              </a>
-            </Link>
-            {/* Repeat for other projects */}
-          </div>
-        </section>
+  return (
+    <div className="container">
+      <Head>
+        <title>Zehra Demir - Software Engineer</title>
+      </Head>
+
+      <Navbar />
+      <div className="main-content">
+        <Sidebar />
+        <div className="project-list">
+          {projects.map((project, index) => (
+            <Card key={index} project={project} />
+          ))}
+        </div>
       </div>
     </div>
-  )
+  );
 }

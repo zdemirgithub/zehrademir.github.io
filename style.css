@@ -1,174 +1,246 @@
-/* General Style */
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #e2f1f8; /* Light pastel blue background */
-    color: #ffffff; /* White text */
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h1, h2, h3 {
-    color: #ffffff; /* White headings */
-}
-
-a {
-    color: #9ec8d5; /* Light pastel blue for links */
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-/* Header */
-header {
-    background-color: #4d8a9c; /* Muted pastel blue */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light pastel blue */
     color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #006f8e; /* Dark pastel blue */
     padding: 20px 0;
     text-align: center;
 }
 
-header h1 {
-    font-size: 2rem;
+h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    transition: all 0.5s ease;
 }
 
-header nav ul {
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #004c6d; /* Darker blue */
+}
+
+/* About Section */
+.about {
+    background-color: #b0e0e6; /* Pastel blue */
+    padding: 40px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #004c6d; /* Darker pastel blue */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Education & Certifications */
+#education-certifications {
+    background-color: #e6f7f8; /* Lighter pastel blue */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #004c6d;
+}
+
+h2, ul {
+    transition: all 0.5s ease;
+}
+
+/* Project Section */
+.projects {
+    padding: 60px 0;
+    background-color: #004c6d; /* Dark pastel blue */
+    color: white;
+    text-align: center;
+}
+
+.project-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    background-color: #b0e0e6; /* Pastel blue */
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 45%;
+}
+
+.project-card h3 {
+    color: #004c6d; /* Darker blue */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #006f8e; /* Medium blue */
+    margin-bottom: 10px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #006f8e;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006f8e;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #004c6d; /* Darker blue */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #004c6d; /* Dark pastel blue */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-links {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-header nav a {
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    background-color: #8db1c1;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
-}
-
-header nav a:hover {
-    background-color: #557f8d; /* Darker pastel blue on hover */
-}
-
-/* Main content section */
-.main-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    padding: 40px;
-}
-
-/* About Me Section */
-.about {
-    background-color: #a7cbe5; /* Light pastel blue */
-    padding: 40px 20px;
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 1.1rem;
-    color: #ffffff;
-    flex: 1;
-}
-
-.about p {
-    line-height: 1.6;
-}
-
-/* Projects Section */
-.projects {
-    padding: 40px 0;
-    background-color: #b8d6e8; /* Soft pastel blue for background */
-    margin-left: 0; /* No sidebar, aligned to full width */
-}
-
-.project-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 40px;
-    justify-content: space-between;
-}
-
-.project-card {
-    width: calc(50% - 15px); /* Each card takes 50% of the row width */
-    background-color: #cfe3f3; /* Soft pastel blue for project cards */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    font-family: 'Comic Sans MS', sans-serif;
-}
-
-.project-description p {
-    font-size: 0.95rem;
-    color: #ffffff;
-}
-
-/* Project Link Button */
-.learn-more-btn {
-    display: inline-block;
-    background-color: #8db1c1; /* Pastel blue */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 30px;
-    margin-top: 15px;
-    font-family: 'Comic Sans MS', sans-serif;
-}
-
-.learn-more-btn:hover {
-    background-color: #557f8d; /* Darker pastel blue on hover */
-}
-
-/* Contact Section */
-.contact {
-    background-color: #4d8a9c; /* Muted pastel blue */
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-}
-
 .contact-links a {
-    margin: 0 10px;
+    font-size: 1.1rem;
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .contact-links a:hover {
-    color: #9ec8d5; /* Light pastel blue on hover */
+    color: #b0e0e6; /* Lighter pastel blue */
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
-    background-color: #557f8d; /* Dark pastel blue */
-    color: white;
+    background-color: #006f8e; /* Dark pastel blue */
+    padding: 20px;
     text-align: center;
-    padding: 20px 0;
+    color: white;
+    font-size: 1rem;
 }
 
-/* Buttons in header */
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hover Effects for Navigation & Buttons */
 .nav-btn {
     padding: 10px 20px;
-    background-color: #8db1c1; /* Pastel blue */
     border-radius: 30px;
-    font-weight: bold;
     color: white;
-    transition: background-color 0.3s ease;
+    background-color: #006f8e;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .nav-btn:hover {
-    background-color: #557f8d; /* Dark pastel blue on hover */
+    background-color: #004c6d;
 }
 
-/* Responsive Design */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .main-content {
+    .project-row {
         flex-direction: column;
-        gap: 20px;
+        align-items: center;
     }
 
     .project-card {
-        width: 100%; /* Stack the project cards vertically for smaller screens */
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-links a {
+        margin-bottom: 10px;
     }
 }
 

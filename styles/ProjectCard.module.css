@@ -1,23 +1,24 @@
 .card {
-  background-color: #fff;
-  padding: 20px;
+  background-color: #222;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
   width: 300px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 .card h3 {
-  font-size: 20px;
-  color: #2c3e50;
+  color: #00ffcc;
 }
 
-.card p {
-  font-size: 14px;
-}
-
-.card a {
-  display: block;
-  margin-top: 10px;
-  color: #3498db;
+.cardLink {
+  color: #00ccff;
   font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.cardLink:hover {
+  color: #ff00cc;
 }

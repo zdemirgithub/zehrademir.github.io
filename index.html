@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zehra Demir - Software Engineer">
-    <title>Zehra Demir - Portfolio</title>
+    <meta name="description" content="Zehra Demir - Software Engineer Portfolio">
+    <title>Zehra Demir - Software Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+
+    <!-- Sidebar Navigation -->
     <nav id="sidebar">
+        <div class="logo">
+            <h2>Zehra Demir</h2>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -17,17 +23,33 @@
         </ul>
     </nav>
 
-    <header id="home">
-        <div class="container">
+    <!-- Main Content -->
+    <div class="content">
+        <header id="header">
             <h1>Welcome to My Portfolio</h1>
-            <p>A passionate software engineer focused on creating beautiful, functional, and scalable web applications.</p>
-        </div>
-    </header>
+            <p>Minimal, Elegant, and Effective Software Engineering Solutions</p>
+        </header>
 
-    <footer>
-        <p>&copy; 2024 Zehra Demir</p>
-    </footer>
-
-    <script src="script.js"></script>
+        <section class="projects-preview">
+            <h2>Featured Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <h3>AI Chatbot</h3>
+                    <p><strong>Stack:</strong> Python, Flask, TensorFlow</p>
+                    <a href="projects.html#project1" class="btn">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>Real-time Stock Tracker</h3>
+                    <p><strong>Stack:</strong> Node.js, React, WebSockets</p>
+                    <a href="projects.html#project2" class="btn">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>Personal Portfolio</h3>
+                    <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+                    <a href="projects.html#project3" class="btn">View Project</a>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

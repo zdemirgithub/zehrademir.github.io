@@ -69,6 +69,7 @@ header nav a:hover {
     left: 0;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for the sidebar */
     overflow-y: auto;
+    z-index: 1; /* Ensure it stays above content */
 }
 
 .sidebar h3 {
@@ -86,7 +87,7 @@ header nav a:hover {
 .sidebar li {
     font-family: 'Comic Sans MS', sans-serif;
     color: #3a3d3b;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Smaller font size for the list items */
 }
 
 .sidebar li a {
@@ -97,9 +98,10 @@ header nav a:hover {
     color: #7a9e9f; /* Pastel teal shade */
 }
 
-.sidebar .certifications ul {
+.sidebar .certifications ul,
+.sidebar .education ul {
     margin-top: 20px;
-    font-size: 0.9rem;
+    font-size: 0.8rem; /* Smaller font size for certifications */
 }
 
 /* About Me Section */
@@ -212,3 +214,4 @@ footer {
         width: 100%; /* Stack the project cards vertically for smaller screens */
     }
 }
+

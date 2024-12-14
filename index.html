@@ -10,11 +10,8 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
-  <!-- Header with Navigation -->
+  <!-- Header -->
   <header>
-    <div class="logo">
-      <h1>Zehra Demir</h1>
-    </div>
     <nav>
       <ul>
         <li><a href="#about" class="nav-link">About</a></li>
@@ -26,48 +23,107 @@
 
   <!-- About Section -->
   <section id="about" class="about">
-    <div class="about-container">
-      <h1 class="section-title">About Me</h1>
-      <p>Hi, I’m Zehra Demir, a Full Stack Developer with extensive experience in building innovative web applications. I specialize in working with modern frameworks and technologies, delivering optimized and scalable solutions.</p>
-    </div>
+    <h1>About Me</h1>
+    <p>Hi, I'm Zehra Demir, a Full Stack Developer with a strong background in building scalable, high-performance web applications using modern technologies and frameworks. Here are some of my key projects.</p>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="projects">
-    <div class="projects-container">
-      <h1 class="section-title">My Projects</h1>
+    <h1>My Projects</h1>
 
-      <!-- Project 1 -->
-      <div class="project" id="project1">
-        <h2 class="project-title">E-Commerce Web App</h2>
-        <p>Technologies: React.js, Node.js, MongoDB, Express.js</p>
-        <p class="project-description">An e-commerce platform that allows users to browse and purchase products online with secure payment integration.</p>
-        <div class="project-visualization" id="project-graph1"></div>
-      </div>
+    <!-- Project 1 -->
+    <div class="project" id="project1">
+      <h2>E-Commerce Web App</h2>
+      <p><strong>Technologies:</strong> React.js, Node.js, MongoDB, Express.js</p>
+      <p><strong>Description:</strong> An e-commerce platform that enables users to browse products, add items to the cart, and securely make payments.</p>
+      <div class="chart" id="chart1"></div>
+    </div>
 
-      <!-- Repeat for other projects -->
+    <!-- Project 2 -->
+    <div class="project" id="project2">
+      <h2>Real-Time Chat Application</h2>
+      <p><strong>Technologies:</strong> Vue.js, Firebase, Socket.IO</p>
+      <p><strong>Description:</strong> A real-time messaging app that allows users to send and receive messages instantly with group chat support.</p>
+      <div class="chart" id="chart2"></div>
+    </div>
 
+    <!-- Project 3 -->
+    <div class="project" id="project3">
+      <h2>Task Management System</h2>
+      <p><strong>Technologies:</strong> Angular, Node.js, MongoDB</p>
+      <p><strong>Description:</strong> A task management app that helps teams organize their tasks, track progress, and meet deadlines.</p>
+      <div class="chart" id="chart3"></div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project" id="project4">
+      <h2>Personal Finance Tracker</h2>
+      <p><strong>Technologies:</strong> React.js, Redux, Firebase</p>
+      <p><strong>Description:</strong> A personal finance tracker that allows users to track expenses, set budgets, and visualize spending trends.</p>
+      <div class="chart" id="chart4"></div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project" id="project5">
+      <h2>Weather Forecast Application</h2>
+      <p><strong>Technologies:</strong> React.js, OpenWeather API, Chart.js</p>
+      <p><strong>Description:</strong> An app that provides real-time weather forecasts, with detailed data on temperature, wind, and precipitation.</p>
+      <div class="chart" id="chart5"></div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="project" id="project6">
+      <h2>Social Media Analytics Dashboard</h2>
+      <p><strong>Technologies:</strong> Svelte, D3.js, Firebase</p>
+      <p><strong>Description:</strong> A dashboard that shows key metrics for social media engagement, such as likes, shares, and comments over time.</p>
+      <div class="chart" id="chart6"></div>
+    </div>
+
+    <!-- Project 7 -->
+    <div class="project" id="project7">
+      <h2>Real-Time Stock Market Dashboard</h2>
+      <p><strong>Technologies:</strong> Vue.js, WebSockets, Chart.js</p>
+      <p><strong>Description:</strong> A dashboard that shows real-time stock prices, market trends, and trading volume for various stocks.</p>
+      <div class="chart" id="chart7"></div>
+    </div>
+
+    <!-- Project 8 -->
+    <div class="project" id="project8">
+      <h2>Blog Platform</h2>
+      <p><strong>Technologies:</strong> Next.js, MongoDB, GraphQL</p>
+      <p><strong>Description:</strong> A blogging platform where users can write and publish posts, leave comments, and follow authors.</p>
+      <div class="chart" id="chart8"></div>
+    </div>
+
+    <!-- Project 9 -->
+    <div class="project" id="project9">
+      <h2>Online Learning Management System</h2>
+      <p><strong>Technologies:</strong> React.js, Node.js, PostgreSQL</p>
+      <p><strong>Description:</strong> A platform for online courses that allows users to browse courses, track progress, and view video tutorials.</p>
+      <div class="chart" id="chart9"></div>
+    </div>
+
+    <!-- Project 10 -->
+    <div class="project" id="project10">
+      <h2>Job Search Web App</h2>
+      <p><strong>Technologies:</strong> Angular, Express.js, MongoDB</p>
+      <p><strong>Description:</strong> A web app that helps job seekers search for job listings, save favorites, and apply directly through the platform.</p>
+      <div class="chart" id="chart10"></div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
-    <div class="contact-container">
-      <h1 class="section-title">Contact Me</h1>
-      <form action="your_backend_script" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" class="input-field">
-        <input type="email" name="email" placeholder="Your Email" class="input-field">
-        <textarea name="message" placeholder="Your Message" class="input-field"></textarea>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-    </div>
+    <h1>Contact Me</h1>
+    <form action="submit_form.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Zehra Demir | All Rights Reserved</p>
-  </footer>
 
   <script src="scripts.js"></script>
 </body>
 </html>
+

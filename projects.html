@@ -8,38 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="sidebar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Include Sidebar -->
+    <div id="sidebar-container"></div>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Include Header Component -->
+        <div id="header-container"></div>
+        
+        <section class="projects">
+            <h1>Featured Projects</h1>
+            <div class="project-list">
+                <div class="project-card">
+                    <h2>AI Chatbot</h2>
+                    <p><strong>Stack:</strong> Python, TensorFlow, Flask</p>
+                    <p>An intelligent chatbot that uses natural language processing to engage in dynamic conversations.</p>
+                </div>
+                <div class="project-card">
+                    <h2>Weather App</h2>
+                    <p><strong>Stack:</strong> JavaScript, HTML, CSS</p>
+                    <p>A real-time weather tracking app using APIs for up-to-date weather forecasts.</p>
+                </div>
+                <div class="project-card">
+                    <h2>Stock Tracker</h2>
+                    <p><strong>Stack:</strong> React, Node.js, MongoDB</p>
+                    <p>Monitor real-time stock prices with a simple and efficient dashboard.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Include Footer -->
+    <div id="footer-container"></div>
 
-    <section id="projects">
-        <h1>Featured Projects</h1>
-        <div class="project-list">
-            <div class="project-card">
-                <h2>AI Chatbot</h2>
-                <p><strong>Stack:</strong> Python, TensorFlow, Flask</p>
-                <p>An intelligent chatbot that uses natural language processing to engage in dynamic conversations.</p>
-            </div>
-            <div class="project-card">
-                <h2>Real-time Weather App</h2>
-                <p><strong>Stack:</strong> JavaScript, HTML5, CSS3</p>
-                <p>A real-time weather tracking app with up-to-date forecasts and weather maps.</p>
-            </div>
-            <div class="project-card">
-                <h2>Stock Tracker</h2>
-                <p><strong>Stack:</strong> React, Node.js, MongoDB</p>
-                <p>A real-time stock price tracker with alerts for major price fluctuations.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Zehra Demir. All rights reserved.</p>
-    </footer>
 </body>
 </html>

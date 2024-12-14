@@ -1,4 +1,4 @@
-/* Cyberpunk theme with neon colors and glowing effects */
+/* General Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,91 +6,164 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #121212;
-    color: #e0e0e0;
-    line-height: 1.6;
-    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0d0d;
+    color: #e6e6e6;
+    overflow-x: hidden;
 }
 
-header {
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #ff007f;
+}
+
+h1, h2, h3 {
+    color: #00ffff;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Hero Section */
+#hero {
     background: linear-gradient(45deg, #ff007f, #00ffff, #00ff00);
-    color: #e0e0e0;
     text-align: center;
-    padding: 60px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.4);
+    padding: 120px 0;
+    position: relative;
+    color: #e0e0e0;
+    overflow: hidden;
     text-shadow: 0 0 20px rgba(255, 0, 127, 0.7), 0 0 30px rgba(0, 255, 255, 0.7);
 }
 
-header h1 {
-    font-size: 3rem;
+#hero h1 {
+    font-size: 4rem;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 2px;
     animation: glowing 1.5s ease-in-out infinite;
 }
 
-header p {
+#hero p {
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background: #ff007f;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
     font-size: 1.2rem;
-    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-section {
-    margin-top: 50px;
+.cta-button:hover {
+    background-color: #00ffff;
 }
 
-section h2 {
-    font-size: 2.5rem;
-    color: #00ffcc;
-    text-transform: uppercase;
-    border-bottom: 2px solid #00ffcc;
-    padding-bottom: 10px;
-    letter-spacing: 1px;
+/* About Section */
+#about {
+    padding: 80px 0;
+    background-color: #1c1c1c;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects Section */
+#projects {
+    padding: 80px 0;
+    background-color: #121212;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
 }
 
 .project {
     background: rgba(255, 255, 255, 0.1);
-    margin-bottom: 20px;
+    border-radius: 15px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.4);
+    transition: transform 0.3s ease;
 }
 
-.project h3 {
-    font-size: 1.8rem;
-    color: #ff007f;
+.project:hover {
+    transform: scale(1.05);
 }
 
 .project p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.project a {
     font-size: 1.1rem;
+    text-decoration: underline;
 }
 
-a {
-    color: #ff007f;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+/* Contact Section */
+#contact {
+    padding: 80px 0;
+    background-color: #1c1c1c;
+    text-align: center;
 }
 
-a:hover {
-    color: #00ffff;
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
 }
 
 footer {
-    margin-top: 50px;
+    background-color: #121212;
+    padding: 20px 0;
     text-align: center;
-    color: #e0e0e0;
-    font-size: 1.1rem;
-    font-weight: 500;
 }
 
-footer a {
-    color: #00ffcc;
+footer p {
+    font-size: 1rem;
 }
 
+/* Keyframe Animation for Glowing Text */
 @keyframes glowing {
-    0% { text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f, 0 0 40px #ff007f, 0 0 50px #ff007f; }
-    50% { text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff; }
-    100% { text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f, 0 0 40px #ff007f, 0 0 50px #ff007f; }
+    0% {
+        text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+    }
+    50% {
+        text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+    }
+    100% {
+        text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+    }
 }

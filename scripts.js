@@ -1,23 +1,37 @@
-// D3.js example to create a basic graph (update with your data)
-d3.select("#project1")
+// D3.js Graph Example (Visual Representation of Project Data)
+d3.select("#project-graph1")
   .append("svg")
-  .attr("width", 300)
+  .attr("width", 500)
   .attr("height", 300)
+  .style("border", "2px solid #39FF14")
   .append("circle")
-  .attr("cx", 150)
+  .attr("cx", 250)
   .attr("cy", 150)
   .attr("r", 100)
-  .style("fill", "green");
+  .style("fill", "none")
+  .style("stroke", "#39FF14")
+  .style("stroke-width", 4)
+  .transition()
+  .duration(2000)
+  .attr("r", 150)
+  .style("stroke", "#FF1493");
+
+// Example of Data Visualization
+const data = [30, 40, 50, 60, 70, 80, 90];
 
 d3.select("#project2")
   .append("svg")
-  .attr("width", 300)
+  .attr("width", 400)
   .attr("height", 300)
+  .selectAll("rect")
+  .data(data)
+  .enter()
   .append("rect")
-  .attr("x", 50)
-  .attr("y", 50)
-  .attr("width", 200)
-  .attr("height", 200)
-  .style("fill", "purple");
-  
-// Add more D3.js visualizations and interactive components for other projects
+  .attr("x", (d, i) => i * 50)
+  .attr("y", d => 300 - d)
+  .attr("width", 40)
+  .attr("height", d => d)
+  .style("fill", "#39FF14")
+  .transition()
+  .duration(2000)
+  .style("fill", "#FF1493");

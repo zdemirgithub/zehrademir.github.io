@@ -1,22 +1,22 @@
-import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
-import { projects } from '../data/projects';
-import ProjectCard from '../components/ProjectCard';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import Chart from '../components/Chart';
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-      <Sidebar />
-      <main>
-        <h2>Projects</h2>
-        <div className="project-list">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-      </main>
+    <div className="font-sans text-white">
+      {/* About Section */}
+      <About />
+
+      {/* Chart Section */}
+      <Chart />
+
+      {/* Contact Section */}
+      <Contact />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
-

@@ -3,199 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Software Engineering Projects</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zehra Demir - Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body {
-            background-color: #f5f5dc; /* Craft Paper Background */
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 50px;
-        }
-        
-        h1, h2 {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            color: #4d4d4d;
-        }
-
-        .project-container {
-            margin: 20px;
-            padding: 20px;
-            background-color: #f3e5ab; /* Light pastel beige */
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .chart-container {
-            width: 300px;
-            height: 300px;
-        }
-
-        .project-info {
-            font-size: 16px;
-            margin-top: 10px;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            color: #7a7a7a;
-        }
-
-        .project-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            margin-top: 30px;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            color: #7a7a7a;
-            text-align: center;
-            padding: 10px;
-        }
-        
-        a {
-            text-decoration: none;
-            color: #7a7a7a;
-            margin: 0 10px;
-        }
-
-        a:hover {
-            color: #4d4d4d;
-        }
-    </style>
 </head>
 <body>
 
-    <h1>My Software Engineering Projects</h1>
-    
-    <!-- Project 1 -->
-    <div class="project-container">
-        <div class="project-title">E-Commerce Web App</div>
-        <div class="chart-container">
-            <canvas id="chart1"></canvas>
-        </div>
-        <div class="project-info">
-            <strong>Stack:</strong> JavaScript, Node.js, MongoDB<br>
-            <strong>Description:</strong> A scalable e-commerce platform with real-time order tracking and user authentication.
-        </div>
-    </div>
+    <!-- Header Section -->
+    <header>
+        <h1>Zehra Demir</h1>
+        <p>Full Stack Developer | AI Enthusiast | Tech Innovator</p>
+    </header>
 
-    <!-- Project 2 -->
-    <div class="project-container">
-        <div class="project-title">Real-Time Chat Application</div>
-        <div class="chart-container">
-            <canvas id="chart2"></canvas>
-        </div>
-        <div class="project-info">
-            <strong>Stack:</strong> JavaScript, Vue.js, Firebase<br>
-            <strong>Description:</strong> A real-time messaging app with user authentication and instant notifications.
-        </div>
-    </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <!-- Project 3 -->
-    <div class="project-container">
-        <div class="project-title">Task Management System</div>
-        <div class="chart-container">
-            <canvas id="chart3"></canvas>
-        </div>
-        <div class="project-info">
-            <strong>Stack:</strong> Python, Flask, PostgreSQL<br>
-            <strong>Description:</strong> A task management system for teams to track tasks, due dates, and progress.
-        </div>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate software engineer with over 5 years of experience in full-stack development. 
+            I specialize in building scalable applications using modern technologies such as React, Next.js, Python, and Cloud platforms. 
+            Currently, I'm exploring advanced AI and machine learning applications, and I'm eager to contribute to the cutting-edge world of technology.
+        </p>
+    </section>
 
-    <!-- Project 4 -->
-    <div class="project-container">
-        <div class="project-title">Blogging Platform</div>
-        <div class="chart-container">
-            <canvas id="chart4"></canvas>
-        </div>
-        <div class="project-info">
-            <strong>Stack:</strong> JavaScript, React, Node.js, MongoDB<br>
-            <strong>Description:</strong> A platform for writing and sharing blog posts with social features.
-        </div>
-    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
 
-    <!-- Project 5 -->
-    <div class="project-container">
-        <div class="project-title">Weather App</div>
-        <div class="chart-container">
-            <canvas id="chart5"></canvas>
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Project 1: E-commerce Web App</h3>
+            <p>Tech Stack: React.js, Node.js, Express, MongoDB</p>
+            <div class="chart-container">
+                <canvas id="project1-chart"></canvas>
+            </div>
         </div>
-        <div class="project-info">
-            <strong>Stack:</strong> JavaScript, React, OpenWeather API<br>
-            <strong>Description:</strong> An app that provides real-time weather updates for any location.
-        </div>
-    </div>
 
-    <!-- Project 6 -->
-    <div class="project-container">
-        <div class="project-title">Portfolio Website</div>
-        <div class="chart-container">
-            <canvas id="chart6"></canvas>
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Project 2: Social Media Dashboard</h3>
+            <p>Tech Stack: Next.js, PostgreSQL, Prisma, Tailwind CSS</p>
+            <div class="chart-container">
+                <canvas id="project2-chart"></canvas>
+            </div>
         </div>
-        <div class="project-info">
-            <strong>Stack:</strong> HTML, CSS, JavaScript, React<br>
-            <strong>Description:</strong> A personal portfolio website to showcase projects and skills.
-        </div>
-    </div>
 
-    <!-- Project 7 -->
-    <div class="project-container">
-        <div class="project-title">Online Learning Platform</div>
-        <div class="chart-container">
-            <canvas id="chart7"></canvas>
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>Project 3: Real-time Chat App</h3>
+            <p>Tech Stack: Vue.js, Firebase, Node.js</p>
+            <div class="chart-container">
+                <canvas id="project3-chart"></canvas>
+            </div>
         </div>
-        <div class="project-info">
-            <strong>Stack:</strong> PHP, MySQL, JavaScript<br>
-            <strong>Description:</strong> A platform for students to take online courses and track their progress.
-        </div>
-    </div>
 
-    <!-- Project 8 -->
-    <div class="project-container">
-        <div class="project-title">Fitness Tracker App</div>
-        <div class="chart-container">
-            <canvas id="chart8"></canvas>
+        <!-- Project 4 -->
+        <div class="project-card">
+            <h3>Project 4: Blogging Platform</h3>
+            <p>Tech Stack: React.js, GraphQL, MongoDB</p>
+            <div class="chart-container">
+                <canvas id="project4-chart"></canvas>
+            </div>
         </div>
-        <div class="project-info">
-            <strong>Stack:</strong> JavaScript, React Native, Firebase<br>
-            <strong>Description:</strong> A mobile app to track workouts, nutrition, and health metrics.
-        </div>
-    </div>
 
-    <!-- Project 9 -->
-    <div class="project-container">
-        <div class="project-title">Online Shopping Cart</div>
-        <div class="chart-container">
-            <canvas id="chart9"></canvas>
+        <!-- Project 5 -->
+        <div class="project-card">
+            <h3>Project 5: Online Learning Platform</h3>
+            <p>Tech Stack: Next.js, MySQL, Tailwind CSS</p>
+            <div class="chart-container">
+                <canvas id="project5-chart"></canvas>
+            </div>
         </div>
-        <div class="project-info">
-            <strong>Stack:</strong> JavaScript, Node.js, Express, MongoDB<br>
-            <strong>Description:</strong> A shopping cart system for e-commerce websites.
-        </div>
-    </div>
 
-    <!-- Project 10 -->
-    <div class="project-container">
-        <div class="project-title">Social Media Dashboard</div>
-        <div class="chart-container">
-            <canvas id="chart10"></canvas>
+        <!-- Project 6 -->
+        <div class="project-card">
+            <h3>Project 6: Fitness Tracker</h3>
+            <p>Tech Stack: Vue.js, Firebase, Tailwind CSS</p>
+            <div class="chart-container">
+                <canvas id="project6-chart"></canvas>
+            </div>
         </div>
-        <div class="project-info">
-            <strong>Stack:</strong> JavaScript, React, Redux, Node.js<br>
-            <strong>Description:</strong> A dashboard to manage social media accounts and analytics.
-        </div>
-    </div>
 
+        <!-- Project 7 -->
+        <div class="project-card">
+            <h3>Project 7: Personal Finance Tracker</h3>
+            <p>Tech Stack: React.js, Node.js, MongoDB</p>
+            <div class="chart-container">
+                <canvas id="project7-chart"></canvas>
+            </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-card">
+            <h3>Project 8: Inventory Management System</h3>
+            <p>Tech Stack: Next.js, PostgreSQL, Prisma</p>
+            <div class="chart-container">
+                <canvas id="project8-chart"></canvas>
+            </div>
+        </div>
+
+        <!-- Project 9 -->
+        <div class="project-card">
+            <h3>Project 9: Job Search App</h3>
+            <p>Tech Stack: React.js, Node.js, MongoDB</p>
+            <div class="chart-container">
+                <canvas id="project9-chart"></canvas>
+            </div>
+        </div>
+
+        <!-- Project 10 -->
+        <div class="project-card">
+            <h3>Project 10: Weather Dashboard</h3>
+            <p>Tech Stack: Vue.js, OpenWeather API, Tailwind CSS</p>
+            <div class="chart-container">
+                <canvas id="project10-chart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="#" method="POST">
+            <input type="text" placeholder="Your Name" name="name" required>
+            <input type="email" placeholder="Your Email" name="email" required>
+            <textarea placeholder="Your Message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>Connect with me on 
-            <a href="https://github.com/zdemirgithub" target="_blank">GitHub</a> | 
-            <a href="https://www.linkedin.com/in/zehra-demir-74b307308" target="_blank">LinkedIn</a> | 
-            <a href="mailto:zehrademir.gm@gmail.com" target="_blank">Email</a>
+        <p>&copy; 2024 Zehra Demir. All rights reserved.</p>
+        <p>
+            Connect with me on <a href="https://www.linkedin.com/in/zehra-demir-74b307308" target="_blank">LinkedIn</a> or check out my <a href="https://github.com/zdemirgithub" target="_blank">GitHub</a>.
         </p>
     </footer>
 

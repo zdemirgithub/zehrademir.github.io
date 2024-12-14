@@ -1,8 +1,8 @@
 /* General Style */
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f9f9f9; /* Light beige background */
-    color: #333;
+    background-color: #f2f4f5; /* Light grey-beige background */
+    color: #3a3d3b; /* Dark grey text for better readability */
     margin: 0;
     padding: 0;
 }
@@ -14,11 +14,11 @@ body {
 }
 
 h1, h2, h3 {
-    color: #2a2a2a;
+    color: #2f4f4f; /* Dark slate grey for headings */
 }
 
 a {
-    color: #5D8AA8; /* Pastel Blue */
+    color: #2a8b8f; /* Pastel teal color */
     text-decoration: none;
 }
 
@@ -29,7 +29,7 @@ ul {
 
 /* Header */
 header {
-    background-color: #A3C1AD; /* Pastel Green */
+    background-color: #4c6a71; /* Muted dark green-blue */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -46,20 +46,20 @@ header nav ul {
 }
 
 header nav a {
-    color: #ffffff;
+    color: #ecf0f1;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1rem;
 }
 
 header nav a:hover {
-    color: #537f7f; /* Muted Dark Green */
+    color: #7a9e9f; /* Pastel teal shade */
 }
 
 /* Sidebar */
 .sidebar {
     width: 200px;
-    background-color: #A3C1AD; /* Pastel Green */
+    background-color: #6b8e7f; /* Muted green shade */
     padding: 20px;
     position: fixed;
     top: 0;
@@ -81,7 +81,7 @@ header nav a:hover {
 }
 
 .sidebar a:hover {
-    color: #537f7f; /* Muted Dark Green */
+    color: #7a9e9f; /* Pastel teal shade */
 }
 
 /* Main Content */
@@ -90,24 +90,21 @@ header nav a:hover {
     padding-top: 60px;
 }
 
-/* About Section */
+/* About Me Section */
 .about {
-    background-color: #F0E7D8; /* Light Pastel Beige */
+    background-color: #e4f0f0; /* Soft pastel green */
     padding: 40px 0;
-}
-
-.about h2 {
-    color: #537f7f; /* Muted Dark Green */
 }
 
 .about p {
     font-size: 1rem;
-    color: #333;
+    color: #4e5d5b;
 }
 
 /* Projects Section */
 .projects {
     padding: 40px 0;
+    background-color: #f7f9f7; /* Light grey background for projects */
 }
 
 .project-row {
@@ -115,20 +112,23 @@ header nav a:hover {
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 40px;
+    justify-content: space-between;
 }
 
 .project-card {
-    width: calc(50% - 15px);
-    background-color: #ffffff;
+    width: calc(50% - 15px); /* Each card takes 50% of the row width */
+    background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 8px;
-    background-color: #f1f8f4; /* Light Pastel Green */
+    background-color: #f1f8f8; /* Light pastel background for project cards */
+    border-left: 5px solid #7a9e9f; /* Pastel teal border to define each card */
+    flex: 1 1 calc(50% - 15px); /* Flexbox rule for even spacing */
 }
 
 .project-description p {
     font-size: 0.95rem;
-    color: #333;
+    color: #4e5d5b;
 }
 
 canvas {
@@ -139,7 +139,7 @@ canvas {
 
 /* Contact Section */
 .contact {
-    background-color: #A3C1AD; /* Pastel Green */
+    background-color: #4c6a71; /* Muted dark green-blue */
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -152,31 +152,29 @@ canvas {
 }
 
 .contact-links a:hover {
-    color: #537f7f; /* Muted Dark Green */
+    color: #7a9e9f; /* Pastel teal */
 }
 
 /* Footer */
 footer {
-    background-color: #B4D7D4; /* Light Pastel Teal */
+    background-color: #6b8e7f; /* Muted green shade */
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
-/* Button Styling */
+/* Buttons in header */
 .nav-btn {
     padding: 10px 20px;
-    background-color: #A3C1AD; /* Pastel Green */
+    background-color: #7a9e9f; /* Pastel teal */
     border-radius: 5px;
-    color: white;
     font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1rem;
+    color: white;
+    transition: background-color 0.3s ease;
 }
 
 .nav-btn:hover {
-    background-color: #537f7f; /* Muted Dark Green */
+    background-color: #4c6a71; /* Dark green-blue on hover */
 }
 
 /* Responsive Design */
@@ -192,7 +190,7 @@ footer {
     }
 
     .project-card {
-        width: 100%;
+        width: 100%; /* Stack the project cards vertically for smaller screens */
     }
 }
 

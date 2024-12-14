@@ -1,4 +1,4 @@
-/* General Reset and Base Styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,65 +13,70 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
-a {
-    color: #00ffff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
+/* Sidebar Navigation */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #111;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
 }
 
-a:hover {
-    color: #ff007f;
+#sidebar ul {
+    list-style-type: none;
 }
 
-h1, h2, h3 {
-    color: #00ffff;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-/* Hero Section */
-#hero {
-    background: linear-gradient(45deg, #ff007f, #00ffff, #00ff00);
-    text-align: center;
-    padding: 120px 0;
-    position: relative;
-    color: #e0e0e0;
-    overflow: hidden;
-    text-shadow: 0 0 20px rgba(255, 0, 127, 0.7), 0 0 30px rgba(0, 255, 255, 0.7);
-}
-
-#hero h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    animation: glowing 1.5s ease-in-out infinite;
-}
-
-#hero p {
-    font-size: 1.4rem;
+#sidebar li {
     margin: 20px 0;
 }
 
-.cta-button {
-    background: #ff007f;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
+#sidebar a {
+    color: #00ffff;
+    text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#sidebar a:hover {
+    color: #ff007f;
+}
+
+/* Header Section */
+#header {
+    background: linear-gradient(45deg, #ff007f, #00ffff);
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(255, 0, 127, 0.7), 0 0 30px rgba(0, 255, 255, 0.7);
+}
+
+#header p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #ff007f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
@@ -79,91 +84,85 @@ h3 {
     background-color: #00ffff;
 }
 
-/* About Section */
-#about {
+/* Section Styles */
+.section {
     padding: 80px 0;
-    background-color: #1c1c1c;
-    text-align: center;
 }
 
-#about p {
+#about h2,
+#projects h2,
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p,
+#contact p {
     font-size: 1.1rem;
     line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
-/* Projects Section */
-#projects {
-    padding: 80px 0;
-    background-color: #121212;
-    text-align: center;
-}
-
-.project-grid {
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
 }
 
-.project {
+.project-card {
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.4);
     transition: transform 0.3s ease;
 }
 
-.project:hover {
+.project-card:hover {
     transform: scale(1.05);
 }
 
-.project p {
-    font-size: 1rem;
-    line-height: 1.6;
+.project-card h3 {
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.project a {
-    font-size: 1.1rem;
-    text-decoration: underline;
+.project-card a {
+    font-size: 1.2rem;
+    color: #ff007f;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Contact Section */
-#contact {
-    padding: 80px 0;
-    background-color: #1c1c1c;
-    text-align: center;
+.project-card a:hover {
+    color: #00ffff;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
+/* Footer */
 footer {
     background-color: #121212;
     padding: 20px 0;
     text-align: center;
+    color: #fff;
 }
 
 footer p {
     font-size: 1rem;
 }
 
-/* Keyframe Animation for Glowing Text */
-@keyframes glowing {
-    0% {
-        text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
     }
-    50% {
-        text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+
+    #sidebar ul {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
     }
-    100% {
-        text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }

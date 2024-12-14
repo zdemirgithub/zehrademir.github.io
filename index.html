@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zehra Demir - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="about-container">
+      <h1>About Me</h1>
+      <p>I'm Zehra Demir, a passionate Full Stack Developer with a diverse background...</p>
+      <a href="https://github.com/zdemirgithub" class="button">GitHub</a>
+      <a href="https://www.linkedin.com/in/zehra-demir-74b307308" class="button">LinkedIn</a>
+      <a href="mailto:zehrademir.gm@gmail.com" class="button">Email</a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects-container">
+      <h1>My Projects</h1>
+      <div class="project" id="project1"></div>
+      <div class="project" id="project2"></div>
+      <!-- Repeat for 10 projects -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <h1>Contact Me</h1>
+      <form action="your_backend_script" method="POST">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Zehra Demir. All Rights Reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -21,71 +21,129 @@ body {
     padding: 20px;
 }
 
-/* Rounded Containers for About Me, Education, and Title */
-.rounded-container {
-    background-color: #b0e0e6; /* Pastel blue */
+/* Header Styles */
+header {
+    background-color: #006f8e; /* Dark pastel blue */
+    padding: 20px 0;
+    text-align: center;
     border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.rounded-container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.rounded-container h2 {
-    color: #004c6d; /* Darker pastel blue */
-    font-size: 2rem;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.rounded-container p,
-.rounded-container ul {
-    font-size: 1.1rem;
-    color: #004c6d; /* Medium blue */
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* Title Section */
-.title-container {
-    text-align: center;
-    background-color: #004c6d; /* Dark pastel blue */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.title-container h1 {
+h1 {
     color: #ffffff;
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    transition: all 0.5s ease;
 }
 
-/* About Section */
-.about {
-    padding: 40px 0;
-    text-align: center;
-}
-
-/* Education Section */
-#education-certifications {
-    margin-top: 40px;
-}
-
-#education-certifications ul {
+nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-#education-certifications ul li {
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #004c6d; /* Darker blue */
+}
+
+/* About Section */
+.about {
+    background-color: #b0e0e6; /* Pastel blue */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #004c6d; /* Darker pastel blue */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Education & Certifications */
+.education {
+    background-color: #e6f7f8; /* Lighter pastel blue */
+    padding: 30px 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
     font-size: 1rem;
     margin: 10px 0;
-    color: #006f8e;
+    color: #004c6d;
+}
+
+h2, ul {
+    transition: all 0.5s ease;
+}
+
+.certifications {
+    margin-top: 20px;
+}
+
+.certifications ul li {
+    font-size: 0.9rem;
+    color: #004c6d;
+    padding: 5px 0;
+}
+
+/* Title Section */
+.title-container {
+    background-color: #006f8e; /* Dark pastel blue */
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.title-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.title-container h1 {
+    font-size: 2rem;
+    color: #ffffff;
 }
 
 /* Project Section */
@@ -105,7 +163,7 @@ body {
 
 .project-card {
     background-color: #b0e0e6; /* Pastel blue */
-    border-radius: 8px;
+    border-radius: 15px;
     padding: 20px;
     flex: 1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -118,9 +176,36 @@ body {
     margin-bottom: 10px;
 }
 
+.project-card p {
+    font-size: 1rem;
+    color: #006f8e; /* Medium blue */
+    margin-bottom: 10px;
+}
+
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #006f8e;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006f8e;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #004c6d; /* Darker blue */
 }
 
 /* Contact Section */
@@ -128,6 +213,8 @@ body {
     background-color: #004c6d; /* Dark pastel blue */
     padding: 40px 0;
     text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .contact-links {
@@ -154,6 +241,32 @@ footer {
     text-align: center;
     color: white;
     font-size: 1rem;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hover Effects for Navigation & Buttons */
+.nav-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: #006f8e;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #004c6d;
 }
 
 /* Mobile Responsiveness */

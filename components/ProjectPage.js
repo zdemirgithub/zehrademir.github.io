@@ -1,3 +1,4 @@
+// components/ProjectPage.js
 import { useRouter } from 'next/router';
 import { projects } from '../data/projects';
 
@@ -18,6 +19,7 @@ const ProjectPage = () => {
       <p><strong>Deployment:</strong> {project.deployment}</p>
       <p><strong>Specs:</strong> {project.specs}</p>
       <p>{project.description}</p>
+      {/* Add dynamic graphs/visualizations here (e.g. using Chart.js or D3.js) */}
     </div>
   );
 };

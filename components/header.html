@@ -1,6 +1,25 @@
-<header>
-    <div class="header-container">
-        <h1>Zehra Demir</h1>
-        <p>Software Engineer</p>
-    </div>
-</header>
+import Link from 'next/link';
+import { useTheme } from 'next-themes';
+
+const Header = () => {
+  const { theme, setTheme } = useTheme();
+
+  return (
+    <header className="header">
+      <div className="header-content">
+        <h1 className="site-title">Zehra Demir</h1>
+        <nav>
+          <ul>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/projects">Projects</Link></li>
+          </ul>
+        </nav>
+        <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+          Toggle Theme
+        </button>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

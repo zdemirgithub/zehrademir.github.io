@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #F9F9F9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #F6F6F6;
+    padding: 20px;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar li {
+    margin: 20px 0;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #66B2FF;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Header */
+header {
+    padding: 100px 0;
+    background-color: #FFD3E0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #FFD3E0;
+    text-align: center;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.project a {
+    color: #66B2FF;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.project a:hover {
+    color: #FF66B2;
+}
+
+/* Links */
+a:hover {
+    text-decoration: underline;
+}

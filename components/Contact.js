@@ -1,16 +1,15 @@
-// components/Contact.js
-const Contact = () => {
-  return (
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>If you’d like to get in touch, feel free to reach out via any of the platforms below:</p>
-      <div className="contact-buttons">
-        <button onClick={() => window.location.href = "https://github.com/zdemirgithub"}>GitHub</button>
-        <button onClick={() => window.location.href = "https://www.linkedin.com/in/zehra-demir-74b307308"}>LinkedIn</button>
-        <button onClick={() => window.location.href = "mailto:zehrademir.gm@gmail.com"}>Email</button>
+const Contact = () => (
+  <section id="contact" className="py-16 px-8 bg-gray-800 text-white">
+    <div className="max-w-screen-xl mx-auto text-center">
+      <h2 className="text-4xl font-bold mb-4">Contact Me</h2>
+      <p className="text-lg mb-4">Feel free to get in touch! You can reach me via the following links:</p>
+      <div>
+        <a href="https://github.com/zdemirgithub" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-4 py-2 rounded mx-2">GitHub</a>
+        <a href="https://www.linkedin.com/in/zehra-demir-74b307308" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-4 py-2 rounded mx-2">LinkedIn</a>
+        <a href="mailto:zehrademir.gm@gmail.com" className="bg-blue-600 text-white px-4 py-2 rounded mx-2">Email</a>
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default Contact;

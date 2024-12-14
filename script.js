@@ -1,26 +1,20 @@
-// Adding advanced interactivity with hover effects and animations
-
-document.addEventListener("DOMContentLoaded", function() {
-    const projects = document.querySelectorAll('.project');
-    const ctaButton = document.querySelector('.cta-button');
-
-    projects.forEach(project => {
-        project.addEventListener('mouseenter', () => {
-            project.style.transform = "scale(1.05)";
-            project.style.transition = "transform 0.3s ease";
-        });
-
-        project.addEventListener('mouseleave', () => {
-            project.style.transform = "scale(1)";
+// Smooth Scroll for internal navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
         });
     });
+});
 
-    ctaButton.addEventListener('mouseenter', () => {
-        ctaButton.style.backgroundColor = '#00ffff';
-        ctaButton.style.transition = 'background-color 0.3s ease';
+// Hover effect for project cards
+const projectCards = document.querySelectorAll('.project-card');
+projectCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.transform = 'scale(1.05)';
     });
-
-    ctaButton.addEventListener('mouseleave', () => {
-        ctaButton.style.backgroundColor = '#ff007f';
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'scale(1)';
     });
 });

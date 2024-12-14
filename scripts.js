@@ -7,8 +7,8 @@ function createChart(ctx, data) {
             datasets: [{
                 label: 'Programming Language Usage',
                 data: data, // This is passed as the project data array
-                backgroundColor: ['#FFADAD', '#FFD6A5', '#FDFFB6', '#C7E9B0', '#D4E157'],
-                borderColor: ['#FF7F7F', '#FFB300', '#FFEB3B', '#8BC34A', '#A5D6A7'],
+                backgroundColor: ['#B2D8B2', '#B7D9E2', '#D1E2D3', '#A8D1D1', '#C4E1F5'],
+                borderColor: ['#A3D8A3', '#9CC9D0', '#A8D1B8', '#8CC4C4', '#BDD8F1'],
                 borderWidth: 1
             }]
         },
@@ -27,16 +27,16 @@ function createChart(ctx, data) {
 
 // Dummy data for the projects (Programming Language usage ratio for each project)
 const projectData = [
-    { project1: [60, 25, 10, 5, 0] },  // Project 1: E-commerce Web App
-    { project2: [50, 20, 20, 5, 5] },  // Project 2: Social Media Dashboard
-    { project3: [65, 10, 15, 10, 0] },  // Project 3: Weather Forecast App
-    { project4: [40, 10, 30, 15, 5] },  // Project 4: Task Management App
-    { project5: [70, 0, 20, 10, 0] },  // Project 5: Real-time Chat App
-    { project6: [50, 30, 10, 5, 5] },  // Project 6: Personal Finance Tracker
-    { project7: [10, 60, 10, 5, 15] },  // Project 7: AI Image Recognition
-    { project8: [10, 0, 70, 10, 10] },  // Project 8: Blogging Platform
-    { project9: [60, 0, 30, 10, 0] },  // Project 9: Video Streaming App
-    { project10: [30, 40, 10, 20, 0] },  // Project 10: Portfolio Website
+    { project1: [60, 25, 10, 5, 0] }, // Project 1 (JavaScript, Python, SQL, CSS, Others)
+    { project2: [50, 20, 20, 5, 5] }, // Project 2 (Next.js, PostgreSQL, Prisma, Tailwind, Others)
+    { project3: [40, 40, 10, 5, 5] }, // Project 3 (Vue.js, Firebase, Node.js, CSS, Others)
+    { project4: [50, 20, 15, 10, 5] }, // Project 4 (React.js, GraphQL, MongoDB, CSS, Others)
+    { project5: [45, 25, 15, 10, 5] }, // Project 5 (Next.js, MySQL, Tailwind CSS, Others)
+    { project6: [50, 30, 10, 5, 5] }, // Project 6 (Vue.js, Firebase, Tailwind CSS, Others)
+    { project7: [60, 20, 10, 5, 5] }, // Project 7 (React.js, Node.js, MongoDB, CSS, Others)
+    { project8: [55, 20, 15, 5, 5] }, // Project 8 (Next.js, PostgreSQL, Prisma, Others)
+    { project9: [60, 25, 10, 5, 0] }, // Project 9 (React.js, Node.js, MongoDB, CSS, Others)
+    { project10: [40, 40, 10, 5, 5] }  // Project 10 (Vue.js, OpenWeather API, Tailwind CSS, Others)
 ];
 
 // When the page is loaded, generate the charts for all 10 projects
@@ -51,16 +51,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const ctx8 = document.getElementById('project8-chart').getContext('2d');
     const ctx9 = document.getElementById('project9-chart').getContext('2d');
     const ctx10 = document.getElementById('project10-chart').getContext('2d');
-    
-    createChart(ctx1, projectData[0].project1);
-    createChart(ctx2, projectData[1].project2);
-    createChart(ctx3, projectData[2].project3);
-    createChart(ctx4, projectData[3].project4);
-    createChart(ctx5, projectData[4].project5);
-    createChart(ctx6, projectData[5].project6);
-    createChart(ctx7, projectData[6].project7);
-    createChart(ctx8, projectData[7].project8);
-    createChart(ctx9, projectData[8].project9);
-    createChart(ctx10, projectData[9].project10);
-});
 
+    createChart(ctx1, [60, 25, 10, 5, 0]);
+    createChart(ctx2, [50, 20, 20, 5, 5]);
+    createChart(ctx3, [40, 40, 10, 5, 5]);
+    createChart(ctx4, [50, 20, 15, 10, 5]);
+    createChart(ctx5, [45, 25, 15, 10, 5]);
+    createChart(ctx6, [50, 30, 10, 5, 5]);
+    createChart(ctx7, [60, 20, 10, 5, 5]);
+    createChart(ctx8, [55, 20, 15, 5, 5]);
+    createChart(ctx9, [60, 25, 10, 5, 0]);
+    createChart(ctx10, [40, 40, 10, 5, 5]);
+});

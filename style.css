@@ -1,232 +1,212 @@
-/* General Styles */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f9f1e6; /* Beige, craft-paper like */
-    color: #4a4a4a; /* Dark gray text */
-    line-height: 1.6;
+    background-color: #f0e4d7; /* Craft paper beige background */
+    color: #333;
     font-size: 16px;
+    line-height: 1.5;
 }
 
-h1, h2, h3 {
-    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans for headers */
-    color: #4a4a4a;
+h1, h2, h3, h4 {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun comic style font */
+}
+
+a {
+    text-decoration: none;
+    color: #ff9a8b; /* Pastel pink for links */
+}
+
+a:hover {
+    color: #ff677d; /* Darker pastel pink for hover effect */
 }
 
 /* Header */
 header {
-    background-color: #FFB6B9; /* Pastel pink */
-    padding: 20px 0;
+    background-color: #392f5a; /* Deep pastel purple for header */
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    color: #ffffff;
-    font-size: 36px;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 20px 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: 'Comic Sans MS', sans-serif;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #392F5A; /* Deep purple for hover effect */
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 /* About Section */
-.about {
-    padding: 50px 20px;
+#about {
+    background-color: #f9f9f9; /* Light pastel background for about section */
+    padding: 40px;
     text-align: center;
-    background-color: #FFEDD5; /* Soft pastel peach */
 }
 
-.about p {
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #392f5a;
+}
+
+#about p {
     max-width: 800px;
-    margin: 20px auto;
-    font-size: 18px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.6;
     color: #555;
 }
 
 /* Projects Section */
-.projects {
-    padding: 50px 20px;
-    background-color: #FFFAF0; /* Light cream color */
-    color: #392F5A; /* Deep purple text for contrast */
+#projects {
+    padding: 40px;
+    background-color: #d4a5a5; /* Pastel pinkish background */
 }
 
-.projects h2 {
+#projects h2 {
+    font-size: 2.5em;
     text-align: center;
-    font-size: 32px;
-    color: #FF6F61; /* Coral red */
     margin-bottom: 30px;
+    color: #392f5a;
 }
 
-.project {
-    background-color: #ffffff;
-    margin: 30px 0;
-    padding: 20px;
+/* Project Card Styles */
+.project-card {
+    background-color: #ffffff; /* White background for the cards */
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 250px; /* Set width of the cards */
+    display: inline-block;
+    vertical-align: top;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project h3 {
-    font-size: 28px;
-    color: #FFB6B9; /* Pastel pink */
+.project-card:hover {
+    transform: scale(1.05); /* Scale up effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.project p {
-    font-size: 18px;
-    color: #6B4226; /* Dark brown */
+.project-card h3 {
+    font-size: 1.3em;
+    color: #392f5a;
+    margin: 10px 0;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-card canvas {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 20px;
 }
 
-/* Chart styles */
-canvas {
-    max-width: 600px;
-    margin: 0 auto 30px;
-    display: block;
+.project-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-card ul li {
+    font-size: 0.9em;
+    color: #777;
 }
 
 /* Contact Section */
-.contact {
-    padding: 50px 20px;
-    background-color: #FFE156; /* Pastel yellow */
+#contact {
+    background-color: #f9f9f9;
+    padding: 40px;
     text-align: center;
 }
 
-.contact a {
-    color: #392F5A;
-    font-size: 20px;
-    margin: 10px 20px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-family: 'Comic Sans MS', sans-serif;
+#contact h2 {
+    font-size: 2.5em;
+    color: #392f5a;
+    margin-bottom: 20px;
 }
 
-.contact a:hover {
-    color: #FF6F61; /* Coral red hover effect */
-    text-decoration: underline;
+#contact p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.contact-links a {
+    display: inline-block;
+    background-color: #ff9a8b;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+    background-color: #ff677d; /* Hover effect for contact links */
 }
 
 /* Footer */
 footer {
-    background-color: #FF6F61; /* Coral red */
-    padding: 20px 0;
+    background-color: #392f5a;
+    color: white;
+    padding: 20px;
     text-align: center;
-    color: #ffffff;
+    margin-top: 40px;
 }
 
 footer p {
-    font-size: 16px;
+    font-size: 1em;
 }
 
-/* Responsive Design */
+/* Media Queries */
 @media (max-width: 768px) {
-    .container {
-        width: 90%;
-        margin: 0 auto;
+    header h1 {
+        font-size: 2em;
     }
 
     nav ul li {
         display: block;
+        margin-bottom: 10px;
+    }
+
+    .project-card {
+        width: 100%; /* Stack project cards on mobile */
         margin: 10px 0;
     }
 
-    .project {
-        padding: 15px;
-    }
-
-    .contact a {
-        font-size: 18px;
+    #about p {
+        font-size: 1em;
     }
 }
 
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 28px;
-    }
-
-    .about p, .projects h2 {
-        font-size: 16px;
-    }
-
-    .project h3 {
-        font-size: 24px;
+    .project-card {
+        width: 100%; /* Ensure project cards are fully responsive */
     }
 }
-
-/* Text effects */
-h1, h2, h3 {
-    transition: all 0.3s ease;
-}
-
-h1:hover, h2:hover, h3:hover {
-    color: #FF6F61; /* Coral red on hover for titles */
-    transform: scale(1.05); /* Slight scaling on hover */
-}
-
-/* Button Style */
-button {
-    background-color: #6B4226; /* Dark brown background */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    font-family: 'Comic Sans MS', sans-serif;
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    background-color: #392F5A; /* Deep purple on hover */
-    transform: scale(1.05);
-}
-
-/* Link Hover Effects */
-a:hover {
-    color: #FF6F61; /* Coral red for links */
-    text-decoration: underline;
-}
-
-/* Section Titles Styling */
-h2, h3 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* Page transitions */
-body {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
 

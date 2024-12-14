@@ -287,3 +287,4 @@ var chart10 = new Chart(ctx10, {
         }
     }
 });
+

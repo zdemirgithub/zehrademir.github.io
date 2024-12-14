@@ -4,130 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zehra Demir - Software Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-    <div class="sidebar">
-        <h2>Your Name</h2>
-        <p>Software Engineer</p>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
-
-    <div class="content">
-        <header>
+    <header>
+        <div class="container">
             <h1>Welcome to My Portfolio</h1>
-            <p>Explore my projects and technical journey.</p>
-        </header>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <!-- About Section -->
-        <section id="about" class="about">
+    <section id="about" class="about">
+        <div class="container">
             <h2>About Me</h2>
-            <p>I am a passionate software engineer with experience in full-stack development. My expertise spans various technologies, and I strive to build scalable and user-friendly applications.</p>
-        </section>
+            <p>
+                Hello! I'm Zehra Demir, a passionate full-stack software engineer with expertise in web and mobile application development.
+                I specialize in building dynamic, high-performance systems with modern frameworks and technologies. I have hands-on experience in
+                working on various projects, from small startups to large-scale platforms. Let's take a look at some of my projects!
+            </p>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <h3>Project 1: E-Commerce Web App</h3>
-                <p>A full-stack e-commerce web app built with JavaScript, Node.js, and MongoDB. It supports user authentication, product management, and an online shopping cart.</p>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project" id="project1">
+                <h3>1. E-Commerce Web App</h3>
+                <p>Stack: JavaScript, Node.js, MongoDB</p>
                 <canvas id="chart1"></canvas>
             </div>
 
-            <!-- Project 2 -->
-            <div class="project-card">
-                <h3>Project 2: Real-Time Chat Application</h3>
-                <p>A real-time chat application built using JavaScript, Vue.js, and Firebase. It supports user messaging and live notifications.</p>
+            <div class="project" id="project2">
+                <h3>2. Real-Time Chat Application</h3>
+                <p>Stack: JavaScript, Vue.js, Firebase</p>
                 <canvas id="chart2"></canvas>
             </div>
 
-            <!-- Project 3 -->
-            <div class="project-card">
-                <h3>Project 3: Task Management System</h3>
-                <p>A task management app built with Python, Flask, and PostgreSQL to track tasks and progress for users and teams.</p>
+            <div class="project" id="project3">
+                <h3>3. Task Management System</h3>
+                <p>Stack: Python, Flask, PostgreSQL</p>
                 <canvas id="chart3"></canvas>
             </div>
 
-            <!-- Project 4 -->
-            <div class="project-card">
-                <h3>Project 4: Blogging Platform</h3>
-                <p>A blogging platform using JavaScript, React, Node.js, and MongoDB, allowing users to create, edit, and share blogs.</p>
+            <div class="project" id="project4">
+                <h3>4. Blogging Platform</h3>
+                <p>Stack: JavaScript, React, Node.js, MongoDB</p>
                 <canvas id="chart4"></canvas>
             </div>
 
-            <!-- Project 5 -->
-            <div class="project-card">
-                <h3>Project 5: Weather App</h3>
-                <p>A weather forecasting app that uses JavaScript, React, and OpenWeather API to display weather data for selected locations.</p>
+            <div class="project" id="project5">
+                <h3>5. Weather App</h3>
+                <p>Stack: JavaScript, React, OpenWeather API</p>
                 <canvas id="chart5"></canvas>
             </div>
 
-            <!-- Project 6 -->
-            <div class="project-card">
-                <h3>Project 6: Portfolio Website</h3>
-                <p>A personal portfolio website using HTML, CSS, JavaScript, and React to showcase my work and projects.</p>
+            <div class="project" id="project6">
+                <h3>6. Portfolio Website</h3>
+                <p>Stack: HTML, CSS, JavaScript, React</p>
                 <canvas id="chart6"></canvas>
             </div>
 
-            <!-- Project 7 -->
-            <div class="project-card">
-                <h3>Project 7: Online Learning Platform</h3>
-                <p>An online learning platform using PHP, MySQL, and JavaScript for delivering courses and managing students.</p>
+            <div class="project" id="project7">
+                <h3>7. Online Learning Platform</h3>
+                <p>Stack: PHP, MySQL, JavaScript</p>
                 <canvas id="chart7"></canvas>
             </div>
 
-            <!-- Project 8 -->
-            <div class="project-card">
-                <h3>Project 8: Fitness Tracker App</h3>
-                <p>A fitness tracker built using JavaScript, React Native, and Firebase to track workout and health data.</p>
+            <div class="project" id="project8">
+                <h3>8. Fitness Tracker App</h3>
+                <p>Stack: JavaScript, React Native, Firebase</p>
                 <canvas id="chart8"></canvas>
             </div>
 
-            <!-- Project 9 -->
-            <div class="project-card">
-                <h3>Project 9: Online Shopping Cart</h3>
-                <p>An e-commerce shopping cart built with JavaScript, Node.js, Express, and MongoDB to manage products and cart sessions.</p>
+            <div class="project" id="project9">
+                <h3>9. Online Shopping Cart</h3>
+                <p>Stack: JavaScript, Node.js, Express, MongoDB</p>
                 <canvas id="chart9"></canvas>
             </div>
 
-            <!-- Project 10 -->
-            <div class="project-card">
-                <h3>Project 10: Social Media Dashboard</h3>
-                <p>A social media dashboard built with JavaScript, React, Redux, and Node.js to manage social media posts and insights.</p>
+            <div class="project" id="project10">
+                <h3>10. Social Media Dashboard</h3>
+                <p>Stack: JavaScript, React, Redux, Node.js</p>
                 <canvas id="chart10"></canvas>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
+    <section id="contact" class="contact">
+        <div class="container">
             <h2>Contact</h2>
-            <p>If you would like to get in touch with me, feel free to fill out the form below or reach me directly via email.</p>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+            <p>If you'd like to get in touch with me, feel free to reach out through any of the links below!</p>
+            <div class="contact-links">
+                <a href="https://github.com/zdemirgithub" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/zehra-demir-74b307308" target="_blank">LinkedIn</a>
+                <a href="mailto:zehrademir.gm@gmail.com" target="_blank">Email</a>
+            </div>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            <p>Connect with me on <a href="https://github.com/zdemirgithub" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/zehra-demir-74b307308" target="_blank">LinkedIn</a>.</p>
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-        </footer>
-    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Zehra Demir. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-    <!-- Scripts -->
     <script src="scripts.js"></script>
 </body>
 
 </html>
+

@@ -1,245 +1,241 @@
-/* General Styles */
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body and global font settings */
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #F9F4D6; /* Craft paper background */
-    color: #3F3F3F;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f5f0e1; /* Beige background for a craftbook feel */
+    color: #3c3c3c; /* Dark gray text for contrast */
     line-height: 1.6;
     padding: 20px;
-    font-size: 16px;
+    margin: 0;
 }
 
-h1, h2, h3 {
-    font-family: 'Comic Sans MS', sans-serif;
-    color: #4B4B4B;
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #e7d1a3; /* Soft pastel beige color */
+    padding: 20px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-p {
+.sidebar h2 {
     font-family: 'Open Sans', sans-serif;
-    color: #5F5F5F;
+    color: #3c3c3c;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-/* Header Styles */
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar nav a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #3c3c3c;
+    padding: 10px;
+    background-color: #f2ebd8; /* Light pastel background for links */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar nav a:hover {
+    background-color: #d9ca8d; /* Slightly darker shade for hover effect */
+}
+
+/* Main content area */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
 header {
-    background-color: #D1E7F9;
-    padding: 30px;
     text-align: center;
-    border-radius: 8px;
+    margin-bottom: 40px;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #3c3c3c;
+    font-size: 36px;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+    color: #3c3c3c;
 }
 
-/* Navigation Bar Styles */
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
+/* About Me section */
+.about {
+    background-color: #f0e9d2; /* Soft pastel background */
+    border-radius: 10px;
+    padding: 20px;
     margin-bottom: 30px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #4B4B4B;
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 1.1rem;
-    padding: 12px 20px;
-    border-radius: 5px;
-    background-color: #E4F0D8;
-    transition: all 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #D1F7E1;
-    color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Main Content Styles */
-.main-content {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 30px;
-}
-
-/* About Section */
-.about {
-    background-color: #F1E0C6;
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
-}
-
 .about h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.about p {
-    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    color: #3c3c3c;
     margin-bottom: 20px;
 }
 
-/* Project Section */
+.about p {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+    color: #3c3c3c;
+    line-height: 1.5;
+}
+
+/* Project Cards */
 .projects {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .project-card {
-    background-color: #F1E0C6;
+    background-color: #fff5e6; /* Light pastel yellow */
+    border-radius: 10px;
     padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.project-card:hover {
-    background-color: #FFDFC4;
-    transform: translateY(-10px);
-}
-
-.project-card h2 {
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 1.5rem;
+.project-card h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #3c3c3c;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .project-card p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+    color: #3c3c3c;
 }
 
-/* Chart Styling */
+/* Chart Containers */
 .chart-container {
-    background-color: #F9F9F9;
+    background-color: #f7f4e8; /* Off-white pastel background */
     border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 600px;
-    margin: 20px auto;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 canvas {
-    width: 100% !important;
-    height: 300px !important;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #D1E7F9;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    margin-top: 50px;
-}
-
-footer p {
-    font-size: 1rem;
-    color: #4B4B4B;
-}
-
-footer a {
-    color: #4B4B4B;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #2C2C2C;
-}
-
-/* Contact Form Styles */
-.contact-form {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-}
-
-.contact-form input, .contact-form textarea {
-    padding: 12px;
-    width: 80%;
+    max-width: 100%;
     border-radius: 5px;
-    border: 1px solid #D1E7F9;
-    font-size: 1rem;
+}
+
+/* Contact Form */
+.contact {
+    background-color: #e8e2cd; /* Light beige background */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.contact h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    color: #3c3c3c;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 16px;
 }
 
 .contact-form button {
-    padding: 12px 20px;
-    background-color: #FFBBF2;
+    font-size: 18px;
+    background-color: #d3b892; /* Light pastel tan background */
     border: none;
-    border-radius: 5px;
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 1.2rem;
+    color: white;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #FFB3D6;
-    transform: translateY(-3px);
+    background-color: #b89c73; /* Slightly darker tan */
+}
+
+/* Footer */
+footer {
+    background-color: #f0e9d2;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+footer p {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+footer a {
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design */
-@media only screen and (max-width: 768px) {
-    .main-content {
-        padding: 10px;
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 220px;
     }
 
     .projects {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-card {
-        width: 80%;
-    }
-
-    .about {
-        padding: 20px;
-    }
-
-    .contact-form input, .contact-form textarea {
-        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
 
-@media only screen and (max-width: 480px) {
-    header h1 {
-        font-size: 2rem;
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100px;
     }
 
-    nav a {
-        font-size: 1rem;
-        padding: 8px 15px;
+    .content {
+        margin-left: 120px;
     }
 
-    .project-card {
-        width: 90%;
-    }
-
-    .contact-form button {
-        font-size: 1rem;
+    .projects {
+        grid-template-columns: 1fr;
     }
 }
 

@@ -1,213 +1,205 @@
-/* Basic reset */
-* {
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and global font settings */
-body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #f5f0e1; /* Beige background for a craftbook feel */
-    color: #3c3c3c; /* Dark gray text for contrast */
+    background-color: #F5E1A4; /* Craft paper-like beige color */
+    color: #3E3B3B; /* Dark brown text for readability */
     line-height: 1.6;
-    padding: 20px;
-    margin: 0;
 }
 
 /* Sidebar Styles */
 .sidebar {
+    width: 250px;
+    background-color: #D1C29F; /* Light beige with a warm tone */
+    padding: 20px;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #e7d1a3; /* Soft pastel beige color */
-    padding: 20px;
-    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    overflow-y: auto;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar h2 {
-    font-family: 'Open Sans', sans-serif;
-    color: #3c3c3c;
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 28px;
+    color: #3E3B3B;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    font-size: 16px;
+    color: #7A6C47;
 }
 
 .sidebar nav {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 .sidebar nav a {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    color: #5F4B3A;
     text-decoration: none;
-    color: #3c3c3c;
-    padding: 10px;
-    background-color: #f2ebd8; /* Light pastel background for links */
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .sidebar nav a:hover {
-    background-color: #d9ca8d; /* Slightly darker shade for hover effect */
+    color: #3E3B3B; /* Darker shade on hover */
 }
 
-/* Main content area */
+/* Content Styles */
 .content {
-    margin-left: 270px;
+    margin-left: 260px;
     padding: 20px;
+    max-width: calc(100% - 260px);
 }
 
 header {
     text-align: center;
     margin-bottom: 40px;
-}
-
-header h1 {
-    font-family: 'Open Sans', sans-serif;
-    color: #3c3c3c;
     font-size: 36px;
+    color: #3E3B3B;
 }
 
 header p {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 18px;
-    color: #3c3c3c;
+    font-size: 20px;
+    color: #7A6C47;
 }
 
-/* About Me section */
+section {
+    margin-bottom: 50px;
+}
+
+/* About Section */
 .about {
-    background-color: #f0e9d2; /* Soft pastel background */
-    border-radius: 10px;
     padding: 20px;
-    margin-bottom: 30px;
+    background-color: #E5D7A9; /* Lighter beige */
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .about h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 28px;
-    color: #3c3c3c;
-    margin-bottom: 20px;
+    font-size: 32px;
+    color: #3E3B3B;
+    margin-bottom: 15px;
 }
 
 .about p {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 18px;
-    color: #3c3c3c;
-    line-height: 1.5;
+    color: #5F4B3A;
+    line-height: 1.8;
 }
 
-/* Project Cards */
+/* Projects Section */
 .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    padding: 20px;
+    background-color: #E5D7A9;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projects h2 {
+    font-size: 32px;
+    color: #3E3B3B;
     margin-bottom: 30px;
 }
 
+/* Project Cards */
 .project-card {
-    background-color: #fff5e6; /* Light pastel yellow */
-    border-radius: 10px;
+    background-color: #F9F1D8; /* Light pastel beige */
+    border-radius: 8px;
     padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-card h3 {
-    font-family: 'Open Sans', sans-serif;
-    color: #3c3c3c;
-    font-size: 24px;
+    font-size: 26px;
+    color: #3E3B3B;
     margin-bottom: 10px;
 }
 
 .project-card p {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 18px;
-    color: #3c3c3c;
+    color: #5F4B3A;
+    margin-bottom: 15px;
 }
 
-/* Chart Containers */
+/* Chart Container */
 .chart-container {
-    background-color: #f7f4e8; /* Off-white pastel background */
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: #FAF4E3; /* Very light beige for charts background */
+    border: 2px solid #D1C29F;
+    border-radius: 8px;
 }
 
-canvas {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-/* Contact Form */
+/* Contact Section */
 .contact {
-    background-color: #e8e2cd; /* Light beige background */
-    border-radius: 10px;
     padding: 20px;
-    margin-top: 30px;
+    background-color: #E5D7A9;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 28px;
-    color: #3c3c3c;
+    font-size: 32px;
+    color: #3E3B3B;
     margin-bottom: 20px;
 }
 
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
+.contact-form {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-form input,
 .contact-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #B8A47A;
+    background-color: #FFF6E0; /* Pale yellowish background for form fields */
     font-size: 16px;
 }
 
 .contact-form button {
+    background-color: #D1C29F;
+    color: #3E3B3B;
+    padding: 12px;
     font-size: 18px;
-    background-color: #d3b892; /* Light pastel tan background */
-    border: none;
-    color: white;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border: none;
 }
 
 .contact-form button:hover {
-    background-color: #b89c73; /* Slightly darker tan */
+    background-color: #B8A47A;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
-    background-color: #f0e9d2;
-    padding: 20px;
     text-align: center;
+    background-color: #F9F1D8;
+    padding: 20px;
     margin-top: 40px;
-    border-radius: 10px;
-}
-
-footer p {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 16px;
-    color: #3c3c3c;
+    color: #3E3B3B;
+    border-top: 2px solid #D1C29F;
 }
 
 footer a {
-    color: #3c3c3c;
+    color: #5F4B3A;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #3E3B3B;
 }
 
 /* Responsive Design */
@@ -215,28 +207,25 @@ footer a:hover {
     .sidebar {
         width: 200px;
     }
-
     .content {
         margin-left: 220px;
+        padding: 15px;
     }
-
-    .projects {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    header {
+        font-size: 28px;
+    }
+    .about, .projects, .contact {
+        padding: 15px;
+    }
+    .project-card {
+        padding: 15px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+    footer {
+        font-size: 14px;
     }
 }
-
-@media (max-width: 480px) {
-    .sidebar {
-        width: 100px;
-    }
-
-    .content {
-        margin-left: 120px;
-    }
-
-    .projects {
-        grid-template-columns: 1fr;
-    }
-}
-
 

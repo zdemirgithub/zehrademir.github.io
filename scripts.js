@@ -1,59 +1,124 @@
-window.onload = function () {
-    // Data for the projects, including programming languages used and their respective percentages
-    const projectData = [
-        { name: 'E-Commerce Web App', languages: { 'JavaScript': 50, 'Node.js': 30, 'MongoDB': 20 } },
-        { name: 'Real-Time Chat Application', languages: { 'JavaScript': 60, 'Vue.js': 30, 'Firebase': 10 } },
-        { name: 'Task Management System', languages: { 'Python': 40, 'Flask': 30, 'PostgreSQL': 30 } },
-        { name: 'Blogging Platform', languages: { 'JavaScript': 40, 'React': 40, 'Node.js': 10, 'MongoDB': 10 } },
-        { name: 'Weather App', languages: { 'JavaScript': 70, 'React': 30 } },
-        { name: 'Portfolio Website', languages: { 'HTML': 50, 'CSS': 30, 'JavaScript': 20 } },
-        { name: 'Online Learning Platform', languages: { 'PHP': 50, 'MySQL': 30, 'JavaScript': 20 } },
-        { name: 'Fitness Tracker App', languages: { 'JavaScript': 50, 'React Native': 40, 'Firebase': 10 } },
-        { name: 'Online Shopping Cart', languages: { 'JavaScript': 40, 'Node.js': 30, 'Express': 20, 'MongoDB': 10 } },
-        { name: 'Social Media Dashboard', languages: { 'JavaScript': 50, 'React': 30, 'Redux': 10, 'Node.js': 10 } }
-    ];
+// Data for the programming languages used in each project
+const projectData = [
+    {
+        name: "E-Commerce Web App",
+        languages: {
+            JavaScript: 60,
+            NodeJS: 30,
+            MongoDB: 10
+        }
+    },
+    {
+        name: "Real-Time Chat Application",
+        languages: {
+            JavaScript: 50,
+            VueJS: 40,
+            Firebase: 10
+        }
+    },
+    {
+        name: "Task Management System",
+        languages: {
+            Python: 50,
+            Flask: 30,
+            PostgreSQL: 20
+        }
+    },
+    {
+        name: "Blogging Platform",
+        languages: {
+            JavaScript: 40,
+            React: 30,
+            NodeJS: 20,
+            MongoDB: 10
+        }
+    },
+    {
+        name: "Weather App",
+        languages: {
+            JavaScript: 60,
+            React: 40
+        }
+    },
+    {
+        name: "Portfolio Website",
+        languages: {
+            HTML: 20,
+            CSS: 30,
+            JavaScript: 50
+        }
+    },
+    {
+        name: "Online Learning Platform",
+        languages: {
+            PHP: 50,
+            MySQL: 30,
+            JavaScript: 20
+        }
+    },
+    {
+        name: "Fitness Tracker App",
+        languages: {
+            JavaScript: 40,
+            ReactNative: 50,
+            Firebase: 10
+        }
+    },
+    {
+        name: "Online Shopping Cart",
+        languages: {
+            JavaScript: 40,
+            NodeJS: 30,
+            Express: 20,
+            MongoDB: 10
+        }
+    },
+    {
+        name: "Social Media Dashboard",
+        languages: {
+            JavaScript: 50,
+            React: 30,
+            Redux: 20
+        }
+    }
+];
 
-    // Loop through each project and create the charts
-    projectData.forEach((project, index) => {
-        const canvas = document.getElementById(`chart${index + 1}`);
-        const ctx = canvas.getContext('2d');
-        const labels = Object.keys(project.languages); // Extract language names
-        const data = Object.values(project.languages); // Extract usage percentages
-
-        new Chart(ctx, {
-            type: 'pie', // Create pie chart
-            data: {
-                labels: labels,
-                datasets: [{
-                    label: 'Languages Used',
-                    data: data,
-                    backgroundColor: [
-                        '#FFB6B9', '#FFC3A0', '#FF677D', '#D4A5A5', '#392F5A', '#6B4226', 
-                        '#E0A899', '#FFB84D', '#BC8A5A', '#6B6B6B'
-                    ], // Pastel colors for each section
-                    borderColor: [
-                        '#FF6F61', '#FF9B8E', '#FF3750', '#D46863', '#392F5A', '#6B4226',
-                        '#E0A899', '#FFB84D', '#BC8A5A', '#6B6B6B'
-                    ], // Darker borders to match pastel sections
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true, // Make the chart responsive to screen size
-                plugins: {
-                    legend: {
-                        position: 'top', // Position of the legend
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function (tooltipItem) {
-                                return tooltipItem.label + ': ' + tooltipItem.raw + '%'; // Format the tooltip to show percentage
-                            }
+// Helper function to create the chart
+function createChart(projectId, data) {
+    const ctx = document.getElementById(projectId).getContext('2d');
+    
+    new Chart(ctx, {
+        type: 'pie',  // Using a pie chart to represent the percentage of programming languages used
+        data: {
+            labels: Object.keys(data),
+            datasets: [{
+                data: Object.values(data),
+                backgroundColor: ['#ff9a8b', '#ff677d', '#d4a5a5', '#392f5a', '#1e3d58'],
+                hoverBackgroundColor: ['#ff9a8b', '#ff677d', '#d4a5a5', '#392f5a', '#1e3d58'],
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(tooltipItem) {
+                            return tooltipItem.label + ': ' + tooltipItem.raw + '%';
                         }
                     }
                 }
             }
-        });
+        }
+    });
+}
+
+// Initialize charts for all projects
+window.onload = function() {
+    projectData.forEach((project, index) => {
+        createChart(`chart${index + 1}`, project.languages);
     });
 };
 

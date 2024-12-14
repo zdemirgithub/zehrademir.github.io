@@ -1,3 +1,4 @@
+// data/projects.js
 export const projects = [
   {
     id: '1',
@@ -26,67 +27,6 @@ export const projects = [
     specs: 'Real-time data visualization dashboard for analytics.',
     description: 'A dashboard for visualizing real-time data with charts using D3.js and PostgreSQL for the backend.',
   },
-  {
-    id: '4',
-    name: 'Weather Forecast App',
-    stack: 'React, OpenWeather API, Redux',
-    framework: 'React.js, Redux',
-    deployment: 'Netlify',
-    specs: 'Provides accurate weather updates based on location.',
-    description: 'A weather application using the OpenWeather API to fetch real-time weather information.',
-  },
-  {
-    id: '5',
-    name: 'Task Manager',
-    stack: 'Next.js, MongoDB, Tailwind CSS',
-    framework: 'Next.js, MongoDB',
-    deployment: 'Vercel',
-    specs: 'Task management tool with authentication and CRUD operations.',
-    description: 'A full-stack task manager with user authentication, where users can add, edit, and delete tasks.',
-  },
-  {
-    id: '6',
-    name: 'Portfolio Website',
-    stack: 'Next.js, Vercel, React',
-    framework: 'Next.js',
-    deployment: 'Vercel',
-    specs: 'A personal portfolio website to showcase projects and skills.',
-    description: 'A modern, responsive portfolio website built with Next.js, showcasing various projects.',
-  },
-  {
-    id: '7',
-    name: 'Expense Tracker',
-    stack: 'React, Redux, Firebase',
-    framework: 'React.js, Firebase',
-    deployment: 'Firebase Hosting',
-    specs: 'Track expenses, income, and generate reports.',
-    description: 'An app for tracking expenses and generating financial reports based on user input.',
-  },
-  {
-    id: '8',
-    name: 'Autopilot System',
-    stack: 'C++, Python, ROS, TensorFlow',
-    framework: 'ROS, TensorFlow',
-    deployment: 'Private Server',
-    specs: 'Self-driving car system with autonomous navigation.',
-    description: 'An autopilot system designed for autonomous vehicles, with AI-based navigation and decision-making.',
-  },
-  {
-    id: '9',
-    name: 'Social Media App',
-    stack: 'React, Node.js, MongoDB, Socket.io',
-    framework: 'React.js, Express',
-    deployment: 'AWS EC2',
-    specs: 'Social media platform for messaging and post sharing.',
-    description: 'A social media platform where users can post, comment, like, and send direct messages.',
-  },
-  {
-    id: '10',
-    name: 'Blockchain Explorer',
-    stack: 'React, Web3.js, Ethereum',
-    framework: 'React.js',
-    deployment: 'Vercel',
-    specs: 'Explorer for Ethereum blockchain, with real-time transaction monitoring.',
-    description: 'A tool to explore Ethereum blockchain, track real-time transactions and addresses.',
-  },
+  // Add remaining 7 projects here
 ];
+

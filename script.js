@@ -1,16 +1,26 @@
-// Cyberpunk-style effects and interactivity
+// Adding advanced interactivity with hover effects and animations
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Glowing animation toggle for text elements
-    const glowingElements = document.querySelectorAll('.project h3, header h1');
+    const projects = document.querySelectorAll('.project');
+    const ctaButton = document.querySelector('.cta-button');
 
-    glowingElements.forEach(element => {
-        element.addEventListener('mouseover', () => {
-            element.style.animation = "glowing 1.5s ease-in-out infinite";
+    projects.forEach(project => {
+        project.addEventListener('mouseenter', () => {
+            project.style.transform = "scale(1.05)";
+            project.style.transition = "transform 0.3s ease";
         });
 
-        element.addEventListener('mouseout', () => {
-            element.style.animation = "none";
+        project.addEventListener('mouseleave', () => {
+            project.style.transform = "scale(1)";
         });
+    });
+
+    ctaButton.addEventListener('mouseenter', () => {
+        ctaButton.style.backgroundColor = '#00ffff';
+        ctaButton.style.transition = 'background-color 0.3s ease';
+    });
+
+    ctaButton.addEventListener('mouseleave', () => {
+        ctaButton.style.backgroundColor = '#ff007f';
     });
 });

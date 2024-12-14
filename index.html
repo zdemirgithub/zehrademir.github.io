@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
             <h1>Welcome to My Portfolio</h1>
@@ -24,115 +25,152 @@
         </div>
     </header>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Hello! I'm Zehra Demir, a passionate full-stack software engineer with expertise in web and mobile application development.
-                I specialize in building dynamic, high-performance systems with modern frameworks and technologies. I have hands-on experience in
-                working on various projects, from small startups to large-scale platforms. Let's take a look at some of my projects!
-            </p>
-        </div>
-    </section>
+    <!-- Sidebar (Navigation) -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </aside>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-
-            <!-- Project Card 1 -->
-            <div class="project-card">
-                <h3>1. E-Commerce Web App</h3>
-                <p>Stack: JavaScript, Node.js, MongoDB</p>
-                <canvas id="chart1"></canvas>
-                <p>This e-commerce web app allows users to browse products, add them to the cart, and complete purchases. The backend is powered by Node.js and MongoDB.</p>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- About Me Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Zehra Demir, a passionate full-stack software engineer with expertise in web and mobile application development.
+                    I specialize in building dynamic, high-performance systems with modern frameworks and technologies. I have hands-on experience in
+                    working on various projects, from small startups to large-scale platforms. Let's take a look at some of my projects!
+                </p>
             </div>
+        </section>
 
-            <!-- Project Card 2 -->
-            <div class="project-card">
-                <h3>2. Real-Time Chat Application</h3>
-                <p>Stack: JavaScript, Vue.js, Firebase</p>
-                <canvas id="chart2"></canvas>
-                <p>A real-time chat application that supports one-on-one and group chats, powered by Vue.js and Firebase for real-time data syncing.</p>
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3>1. E-Commerce Web App</h3>
+                    <div class="project-description">
+                        <p><strong>Stack:</strong> JavaScript, Node.js, MongoDB</p>
+                        <p>This project is a fully functional e-commerce platform featuring product listings, cart functionality, and user authentication.</p>
+                    </div>
+                    <canvas id="chart1"></canvas>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3>2. Real-Time Chat Application</h3>
+                    <div class="project-description">
+                        <p><strong>Stack:</strong> JavaScript, Vue.js, Firebase</p>
+                        <p>A real-time messaging platform allowing users to send messages and images instantly.</p>
+                    </div>
+                    <canvas id="chart2"></canvas>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3>3. Task Management System</h3>
+                    <div class="project-description">
+                        <p><strong>Stack:</strong> Python, Flask, PostgreSQL</p>
+                        <p>An intuitive task management tool with the ability to add, edit, and delete tasks, as well as categorize and track progress.</p>
+                    </div>
+                    <canvas id="chart3"></canvas>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <h3>4. Blogging Platform</h3>
+                    <div class="project-description">
+                        <p><strong>Stack:</strong> JavaScript, React, Node.js, MongoDB</p>
+                        <p>A blogging platform where users can write, edit, and publish posts, along with real-time commenting features.</p>
+                    </div>
+                    <canvas id="chart4"></canvas>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <h3>5. Weather App</h3>
+                    <div class="project-description">
+                        <p><strong>Stack:</strong> JavaScript, React, OpenWeather API</p>
+                        <p>A simple weather app that allows users to check weather conditions based on their location and get weather forecasts.</p>
+                    </div>
+                    <canvas id="chart5"></canvas>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <h3>6. Portfolio Website</h3>
+                    <div class="project-description">
+                        <p><strong>Stack:</strong> HTML, CSS, JavaScript, React</p>
+                        <p>This portfolio website showcases my software engineering skills and provides a clear overview of my past work.</p>
+                    </div>
+                    <canvas id="chart6"></canvas>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card">
+                    <h3>7. Online Learning Platform</h3>
+                    <div class="project-description">
+                        <p><strong>Stack:</strong> PHP, MySQL, JavaScript</p>
+                        <p>A platform designed for online courses where users can enroll in courses, watch lectures, and complete assignments.</p>
+                    </div>
+                    <canvas id="chart7"></canvas>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card">
+                    <h3>8. Fitness Tracker App</h3>
+                    <div class="project-description">
+                        <p><strong>Stack:</strong> JavaScript, React Native, Firebase</p>
+                        <p>An app that helps users track their fitness goals, log workouts, and monitor progress over time.</p>
+                    </div>
+                    <canvas id="chart8"></canvas>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-card">
+                    <h3>9. Online Shopping Cart</h3>
+                    <div class="project-description">
+                        <p><strong>Stack:</strong> JavaScript, Node.js, Express, MongoDB</p>
+                        <p>A shopping cart system integrated with an e-commerce platform for adding, removing, and checking out products.</p>
+                    </div>
+                    <canvas id="chart9"></canvas>
+                </div>
+
+                <!-- Project 10 -->
+                <div class="project-card">
+                    <h3>10. Social Media Dashboard</h3>
+                    <div class="project-description">
+                        <p><strong>Stack:</strong> JavaScript, React, Redux, Node.js</p>
+                        <p>A dashboard displaying user engagement and analytics for a social media platform, with real-time data fetching.</p>
+                    </div>
+                    <canvas id="chart10"></canvas>
+                </div>
+
             </div>
+        </section>
 
-            <!-- Project Card 3 -->
-            <div class="project-card">
-                <h3>3. Task Management System</h3>
-                <p>Stack: Python, Flask, PostgreSQL</p>
-                <canvas id="chart3"></canvas>
-                <p>A task management system for teams to track projects and individual tasks. Built with Flask and PostgreSQL for scalable data storage.</p>
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>If you'd like to get in touch with me, feel free to reach out through any of the links below!</p>
+                <div class="contact-links">
+                    <a href="https://github.com/zdemirgithub" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/zehra-demir-74b307308" target="_blank">LinkedIn</a>
+                    <a href="mailto:zehrademir.gm@gmail.com" target="_blank">Email</a>
+                </div>
             </div>
+        </section>
+    </div>
 
-            <!-- Project Card 4 -->
-            <div class="project-card">
-                <h3>4. Blogging Platform</h3>
-                <p>Stack: JavaScript, React, Node.js, MongoDB</p>
-                <canvas id="chart4"></canvas>
-                <p>This blogging platform allows users to write, edit, and publish articles. It's powered by React on the frontend and Node.js on the backend.</p>
-            </div>
-
-            <!-- Project Card 5 -->
-            <div class="project-card">
-                <h3>5. Weather App</h3>
-                <p>Stack: JavaScript, React, OpenWeather API</p>
-                <canvas id="chart5"></canvas>
-                <p>A weather forecasting app that fetches data from the OpenWeather API and displays it in an interactive UI built with React.</p>
-            </div>
-
-            <!-- Project Card 6 -->
-            <div class="project-card">
-                <h3>6. Portfolio Website</h3>
-                <p>Stack: HTML, CSS, JavaScript, React</p>
-                <canvas id="chart6"></canvas>
-                <p>This portfolio website highlights my projects and technical expertise. Built with React, HTML, and CSS for a responsive layout.</p>
-            </div>
-
-            <!-- Project Card 7 -->
-            <div class="project-card">
-                <h3>7. Online Learning Platform</h3>
-                <p>Stack: PHP, MySQL, JavaScript</p>
-                <canvas id="chart7"></canvas>
-                <p>An online learning platform that offers video tutorials and assessments. Built with PHP and MySQL for secure user data management.</p>
-            </div>
-
-            <!-- Project Card 8 -->
-            <div class="project-card">
-                <h3>8. Fitness Tracker App</h3>
-                <p>Stack: JavaScript, React Native, Firebase</p>
-                <canvas id="chart8"></canvas>
-                <p>A mobile app that tracks users' fitness activities. Built with React Native for cross-platform compatibility and Firebase for real-time data sync.</p>
-            </div>
-
-            <!-- Project Card 9 -->
-            <div class="project-card">
-                <h3>9. Online Shopping Cart</h3>
-                <p>Stack: JavaScript, Node.js, Express, MongoDB</p>
-                <canvas id="chart9"></canvas>
-                <p>A simple online shopping cart app where users can add, remove, and update products in their cart. Built with Node.js and MongoDB.</p>
-            </div>
-
-            <!-- Project Card 10 -->
-            <div class="project-card">
-                <h3>10. Social Media Dashboard</h3>
-                <p>Stack: JavaScript, React, Redux, Node.js</p>
-                <canvas id="chart10"></canvas>
-                <p>A dashboard to track social media activity across multiple platforms, built using React, Redux, and Node.js for managing state and backend logic.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch with me, feel free to reach out through any of the links below!</p>
-            <div class="contact-links">
-                <a href="https://github.com/zdemirgithub" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/zehra-demir-74b307308" target="_blank">LinkedIn</a>
-                <a href="mailto:zehrademir.gm@gmail.com" target="_blank">Email</a>
-            </div>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Zehra Demir. All Rights Reserved.</p>

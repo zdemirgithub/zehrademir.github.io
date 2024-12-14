@@ -1,3 +1,4 @@
+import Header from '../components/Header';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
@@ -6,6 +7,9 @@ import Chart from '../components/Chart';
 export default function Home() {
   return (
     <div className="font-sans text-white">
+      {/* Header */}
+      <Header />
+
       {/* About Section */}
       <About />
 

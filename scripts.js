@@ -1,65 +1,289 @@
-// Function to create a chart for each project showing programming language usage
-function createChart(ctx, data) {
-    new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: ['JavaScript', 'Python', 'SQL', 'CSS', 'Others'],
-            datasets: [{
-                label: 'Programming Language Usage',
-                data: data, // This is passed as the project data array
-                backgroundColor: ['#B2D8B2', '#B7D9E2', '#D1E2D3', '#A8D1D1', '#C4E1F5'],
-                borderColor: ['#A3D8A3', '#9CC9D0', '#A8D1B8', '#8CC4C4', '#BDD8F1'],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: {
-                    position: 'top',
-                },
-                tooltip: {
-                    enabled: true
+// Project 1: E-Commerce Web App
+var ctx1 = document.getElementById('chart1').getContext('2d');
+var chart1 = new Chart(ctx1, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'Node.js', 'MongoDB'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [70, 20, 10],
+            backgroundColor: ['#FFB3BA', '#FFDFBA', '#FFFAF1'], // Pastel colors
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
                 }
             }
-        });
-}
+        }
+    }
+});
 
-// Dummy data for the projects (Programming Language usage ratio for each project)
-const projectData = [
-    { project1: [60, 25, 10, 5, 0] }, // Project 1 (JavaScript, Python, SQL, CSS, Others)
-    { project2: [50, 20, 20, 5, 5] }, // Project 2 (Next.js, PostgreSQL, Prisma, Tailwind, Others)
-    { project3: [40, 40, 10, 5, 5] }, // Project 3 (Vue.js, Firebase, Node.js, CSS, Others)
-    { project4: [50, 20, 15, 10, 5] }, // Project 4 (React.js, GraphQL, MongoDB, CSS, Others)
-    { project5: [45, 25, 15, 10, 5] }, // Project 5 (Next.js, MySQL, Tailwind CSS, Others)
-    { project6: [50, 30, 10, 5, 5] }, // Project 6 (Vue.js, Firebase, Tailwind CSS, Others)
-    { project7: [60, 20, 10, 5, 5] }, // Project 7 (React.js, Node.js, MongoDB, CSS, Others)
-    { project8: [55, 20, 15, 5, 5] }, // Project 8 (Next.js, PostgreSQL, Prisma, Others)
-    { project9: [60, 25, 10, 5, 0] }, // Project 9 (React.js, Node.js, MongoDB, CSS, Others)
-    { project10: [40, 40, 10, 5, 5] }  // Project 10 (Vue.js, OpenWeather API, Tailwind CSS, Others)
-];
+// Project 2: Real-Time Chat Application
+var ctx2 = document.getElementById('chart2').getContext('2d');
+var chart2 = new Chart(ctx2, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'Vue.js', 'Firebase'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [60, 30, 10],
+            backgroundColor: ['#D0E9E3', '#F1E3E3', '#F9F4E0'], // Pastel colors
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
+});
 
-// When the page is loaded, generate the charts for all 10 projects
-document.addEventListener("DOMContentLoaded", () => {
-    const ctx1 = document.getElementById('project1-chart').getContext('2d');
-    const ctx2 = document.getElementById('project2-chart').getContext('2d');
-    const ctx3 = document.getElementById('project3-chart').getContext('2d');
-    const ctx4 = document.getElementById('project4-chart').getContext('2d');
-    const ctx5 = document.getElementById('project5-chart').getContext('2d');
-    const ctx6 = document.getElementById('project6-chart').getContext('2d');
-    const ctx7 = document.getElementById('project7-chart').getContext('2d');
-    const ctx8 = document.getElementById('project8-chart').getContext('2d');
-    const ctx9 = document.getElementById('project9-chart').getContext('2d');
-    const ctx10 = document.getElementById('project10-chart').getContext('2d');
+// Project 3: Task Management System
+var ctx3 = document.getElementById('chart3').getContext('2d');
+var chart3 = new Chart(ctx3, {
+    type: 'pie',
+    data: {
+        labels: ['Python', 'Flask', 'PostgreSQL'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [50, 30, 20],
+            backgroundColor: ['#D8F1F9', '#A8E8F1', '#C8F9E8'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
+});
 
-    createChart(ctx1, [60, 25, 10, 5, 0]);
-    createChart(ctx2, [50, 20, 20, 5, 5]);
-    createChart(ctx3, [40, 40, 10, 5, 5]);
-    createChart(ctx4, [50, 20, 15, 10, 5]);
-    createChart(ctx5, [45, 25, 15, 10, 5]);
-    createChart(ctx6, [50, 30, 10, 5, 5]);
-    createChart(ctx7, [60, 20, 10, 5, 5]);
-    createChart(ctx8, [55, 20, 15, 5, 5]);
-    createChart(ctx9, [60, 25, 10, 5, 0]);
-    createChart(ctx10, [40, 40, 10, 5, 5]);
+// Project 4: Blogging Platform
+var ctx4 = document.getElementById('chart4').getContext('2d');
+var chart4 = new Chart(ctx4, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'React', 'Node.js', 'MongoDB'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [40, 30, 20, 10],
+            backgroundColor: ['#D1E7F7', '#FFDFD3', '#F5E1D4', '#E0F7E7'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
+});
+
+// Project 5: Weather App
+var ctx5 = document.getElementById('chart5').getContext('2d');
+var chart5 = new Chart(ctx5, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'React', 'OpenWeather API'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [60, 30, 10],
+            backgroundColor: ['#FFDDC1', '#E2F0CB', '#F3E9D2'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
+});
+
+// Project 6: Portfolio Website
+var ctx6 = document.getElementById('chart6').getContext('2d');
+var chart6 = new Chart(ctx6, {
+    type: 'pie',
+    data: {
+        labels: ['HTML', 'CSS', 'JavaScript', 'React'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [25, 25, 25, 25],
+            backgroundColor: ['#D5F4E6', '#F0E4D7', '#FFBBF2', '#FFF9C4'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
+});
+
+// Project 7: Online Learning Platform
+var ctx7 = document.getElementById('chart7').getContext('2d');
+var chart7 = new Chart(ctx7, {
+    type: 'pie',
+    data: {
+        labels: ['PHP', 'MySQL', 'JavaScript'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [50, 40, 10],
+            backgroundColor: ['#F5D0A9', '#B9D7D5', '#D9E0D1'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
+});
+
+// Project 8: Fitness Tracker App
+var ctx8 = document.getElementById('chart8').getContext('2d');
+var chart8 = new Chart(ctx8, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'React Native', 'Firebase'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [50, 40, 10],
+            backgroundColor: ['#E2F7F4', '#F1E0C8', '#FFDCFB'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
+});
+
+// Project 9: Online Shopping Cart
+var ctx9 = document.getElementById('chart9').getContext('2d');
+var chart9 = new Chart(ctx9, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'Node.js', 'Express', 'MongoDB'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [35, 25, 20, 20],
+            backgroundColor: ['#D1F5D3', '#F9F5D7', '#F0D7E5', '#FFEBE9'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
+});
+
+// Project 10: Social Media Dashboard
+var ctx10 = document.getElementById('chart10').getContext('2d');
+var chart10 = new Chart(ctx10, {
+    type: 'pie',
+    data: {
+        labels: ['JavaScript', 'React', 'Redux', 'Node.js'],
+        datasets: [{
+            label: 'Programming Languages',
+            data: [40, 30, 20, 10],
+            backgroundColor: ['#F7D7E4', '#E2F5D4', '#FFF3E0', '#D8E4F0'],
+            borderColor: '#FFFFFF',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        family: 'Comic Sans MS'
+                    }
+                }
+            }
+        }
+    }
 });

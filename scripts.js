@@ -1,221 +1,159 @@
 // Project 1: E-Commerce Web App
-const chart1 = d3.select("#chart1")
-  .append("svg")
-  .attr("width", 300)
-  .attr("height", 300);
-
-const data1 = [
-  { language: "JavaScript", percentage: 70 },
-  { language: "Node.js", percentage: 20 },
-  { language: "MongoDB", percentage: 10 }
-];
-
-const arc1 = d3.arc().innerRadius(0).outerRadius(150);
-const pie1 = d3.pie().value(d => d.percentage);
-
-chart1.selectAll("path")
-  .data(pie1(data1))
-  .enter()
-  .append("path")
-  .attr("d", arc1)
-  .attr("fill", (d, i) => d3.schemeCategory10[i]);
+const ctx1 = document.getElementById('chart1').getContext('2d');
+const chart1 = new Chart(ctx1, {
+  type: 'pie',
+  data: {
+    labels: ['JavaScript', 'Node.js', 'MongoDB'],
+    datasets: [{
+      label: 'Programming Languages Used',
+      data: [70, 20, 10],
+      backgroundColor: ['#f9c5d1', '#a1c4fd', '#f6e7d7'], // Pastel colors
+      borderColor: '#fff',
+      borderWidth: 1
+    }]
+  }
+});
 
 // Project 2: Real-Time Chat Application
-const chart2 = d3.select("#chart2")
-  .append("svg")
-  .attr("width", 300)
-  .attr("height", 300);
-
-const data2 = [
-  { language: "JavaScript", percentage: 60 },
-  { language: "Vue.js", percentage: 30 },
-  { language: "Firebase", percentage: 10 }
-];
-
-const arc2 = d3.arc().innerRadius(0).outerRadius(150);
-const pie2 = d3.pie().value(d => d.percentage);
-
-chart2.selectAll("path")
-  .data(pie2(data2))
-  .enter()
-  .append("path")
-  .attr("d", arc2)
-  .attr("fill", (d, i) => d3.schemeCategory10[i]);
+const ctx2 = document.getElementById('chart2').getContext('2d');
+const chart2 = new Chart(ctx2, {
+  type: 'pie',
+  data: {
+    labels: ['JavaScript', 'Node.js', 'Socket.io', 'HTML/CSS'],
+    datasets: [{
+      label: 'Programming Languages Used',
+      data: [40, 30, 20, 10],
+      backgroundColor: ['#ffb3b3', '#c2d6ff', '#f7e0a1', '#c4f2a1'], // Pastel colors
+      borderColor: '#fff',
+      borderWidth: 1
+    }]
+  }
+});
 
 // Project 3: Task Management System
-const chart3 = d3.select("#chart3")
-  .append("svg")
-  .attr("width", 300)
-  .attr("height", 300);
+const ctx3 = document.getElementById('chart3').getContext('2d');
+const chart3 = new Chart(ctx3, {
+  type: 'pie',
+  data: {
+    labels: ['Python', 'Flask', 'PostgreSQL', 'HTML/CSS'],
+    datasets: [{
+      label: 'Programming Languages Used',
+      data: [60, 20, 10, 10],
+      backgroundColor: ['#b8f2e6', '#ffb3cc', '#ffdb99', '#f3e6f5'], // Pastel colors
+      borderColor: '#fff',
+      borderWidth: 1
+    }]
+  }
+});
 
-const data3 = [
-  { language: "JavaScript", percentage: 50 },
-  { language: "Node.js", percentage: 25 },
-  { language: "MongoDB", percentage: 15 },
-  { language: "Express.js", percentage: 10 }
-];
+// Project 4: Blogging Platform
+const ctx4 = document.getElementById('chart4').getContext('2d');
+const chart4 = new Chart(ctx4, {
+  type: 'pie',
+  data: {
+    labels: ['Ruby', 'Rails', 'PostgreSQL', 'HTML/CSS'],
+    datasets: [{
+      label: 'Programming Languages Used',
+      data: [50, 30, 10, 10],
+      backgroundColor: ['#ffccff', '#99ff99', '#e6ccff', '#ffe6b3'], // Pastel colors
+      borderColor: '#fff',
+      borderWidth: 1
+    }]
+  }
+});
 
-const arc3 = d3.arc().innerRadius(0).outerRadius(150);
-const pie3 = d3.pie().value(d => d.percentage);
+// Project 5: Fitness Tracker
+const ctx5 = document.getElementById('chart5').getContext('2d');
+const chart5 = new Chart(ctx5, {
+  type: 'pie',
+  data: {
+    labels: ['React.js', 'Node.js', 'MongoDB', 'HTML/CSS'],
+    datasets: [{
+      label: 'Programming Languages Used',
+      data: [50, 20, 20, 10],
+      backgroundColor: ['#d8f4e8', '#ffd699', '#ffccff', '#ffcccc'], // Pastel colors
+      borderColor: '#fff',
+      borderWidth: 1
+    }]
+  }
+});
 
-chart3.selectAll("path")
-  .data(pie3(data3))
-  .enter()
-  .append("path")
-  .attr("d", arc3)
-  .attr("fill", (d, i) => d3.schemeCategory10[i]);
+// Project 6: Portfolio Website
+const ctx6 = document.getElementById('chart6').getContext('2d');
+const chart6 = new Chart(ctx6, {
+  type: 'pie',
+  data: {
+    labels: ['HTML', 'CSS', 'JavaScript'],
+    datasets: [{
+      label: 'Programming Languages Used',
+      data: [50, 30, 20],
+      backgroundColor: ['#ffcc99', '#ffb3b3', '#c2f0ff'], // Pastel colors
+      borderColor: '#fff',
+      borderWidth: 1
+    }]
+  }
+});
 
-// Project 4: Personal Finance Tracker
-const chart4 = d3.select("#chart4")
-  .append("svg")
-  .attr("width", 300)
-  .attr("height", 300);
+// Project 7: Weather Forecasting App
+const ctx7 = document.getElementById('chart7').getContext('2d');
+const chart7 = new Chart(ctx7, {
+  type: 'pie',
+  data: {
+    labels: ['JavaScript', 'OpenWeather API', 'HTML/CSS'],
+    datasets: [{
+      label: 'Programming Languages Used',
+      data: [60, 30, 10],
+      backgroundColor: ['#a2e6ff', '#ffccff', '#ffebc2'], // Pastel colors
+      borderColor: '#fff',
+      borderWidth: 1
+    }]
+  }
+});
 
-const data4 = [
-  { language: "JavaScript", percentage: 50 },
-  { language: "React.js", percentage: 30 },
-  { language: "Firebase", percentage: 20 }
-];
+// Project 8: Task Automation Tool
+const ctx8 = document.getElementById('chart8').getContext('2d');
+const chart8 = new Chart(ctx8, {
+  type: 'pie',
+  data: {
+    labels: ['Python', 'Flask', 'SQLite', 'HTML/CSS'],
+    datasets: [{
+      label: 'Programming Languages Used',
+      data: [60, 20, 10, 10],
+      backgroundColor: ['#d6f7b6', '#f9ccff', '#ffb3b3', '#c2e0ff'], // Pastel colors
+      borderColor: '#fff',
+      borderWidth: 1
+    }]
+  }
+});
 
-const arc4 = d3.arc().innerRadius(0).outerRadius(150);
-const pie4 = d3.pie().value(d => d.percentage);
+// Project 9: Social Media Platform
+const ctx9 = document.getElementById('chart9').getContext('2d');
+const chart9 = new Chart(ctx9, {
+  type: 'pie',
+  data: {
+    labels: ['React.js', 'Node.js', 'MongoDB', 'CSS'],
+    datasets: [{
+      label: 'Programming Languages Used',
+      data: [50, 30, 10, 10],
+      backgroundColor: ['#e6f7d9', '#f2ccff', '#b3f0ff', '#ffb3cc'], // Pastel colors
+      borderColor: '#fff',
+      borderWidth: 1
+    }]
+  }
+});
 
-chart4.selectAll("path")
-  .data(pie4(data4))
-  .enter()
-  .append("path")
-  .attr("d", arc4)
-  .attr("fill", (d, i) => d3.schemeCategory10[i]);
-
-// Project 5: Weather Forecast Application
-const chart5 = d3.select("#chart5")
-  .append("svg")
-  .attr("width", 300)
-  .attr("height", 300);
-
-const data5 = [
-  { language: "JavaScript", percentage: 60 },
-  { language: "React.js", percentage: 25 },
-  { language: "OpenWeather API", percentage: 15 }
-];
-
-const arc5 = d3.arc().innerRadius(0).outerRadius(150);
-const pie5 = d3.pie().value(d => d.percentage);
-
-chart5.selectAll("path")
-  .data(pie5(data5))
-  .enter()
-  .append("path")
-  .attr("d", arc5)
-  .attr("fill", (d, i) => d3.schemeCategory10[i]);
-
-// Project 6: Social Media Analytics Dashboard
-const chart6 = d3.select("#chart6")
-  .append("svg")
-  .attr("width", 300)
-  .attr("height", 300);
-
-const data6 = [
-  { language: "JavaScript", percentage: 50 },
-  { language: "Svelte", percentage: 40 },
-  { language: "D3.js", percentage: 10 }
-];
-
-const arc6 = d3.arc().innerRadius(0).outerRadius(150);
-const pie6 = d3.pie().value(d => d.percentage);
-
-chart6.selectAll("path")
-  .data(pie6(data6))
-  .enter()
-  .append("path")
-  .attr("d", arc6)
-  .attr("fill", (d, i) => d3.schemeCategory10[i]);
-
-// Project 7: Real-Time Stock Market Dashboard
-const chart7 = d3.select("#chart7")
-  .append("svg")
-  .attr("width", 300)
-  .attr("height", 300);
-
-const data7 = [
-  { language: "JavaScript", percentage: 55 },
-  { language: "Vue.js", percentage: 35 },
-  { language: "Chart.js", percentage: 10 }
-];
-
-const arc7 = d3.arc().innerRadius(0).outerRadius(150);
-const pie7 = d3.pie().value(d => d.percentage);
-
-chart7.selectAll("path")
-  .data(pie7(data7))
-  .enter()
-  .append("path")
-  .attr("d", arc7)
-  .attr("fill", (d, i) => d3.schemeCategory10[i]);
-
-// Project 8: Blog Platform
-const chart8 = d3.select("#chart8")
-  .append("svg")
-  .attr("width", 300)
-  .attr("height", 300);
-
-const data8 = [
-  { language: "JavaScript", percentage: 60 },
-  { language: "React.js", percentage: 30 },
-  { language: "MongoDB", percentage: 10 }
-];
-
-const arc8 = d3.arc().innerRadius(0).outerRadius(150);
-const pie8 = d3.pie().value(d => d.percentage);
-
-chart8.selectAll("path")
-  .data(pie8(data8))
-  .enter()
-  .append("path")
-  .attr("d", arc8)
-  .attr("fill", (d, i) => d3.schemeCategory10[i]);
-
-// Project 9: Online Learning Management System
-const chart9 = d3.select("#chart9")
-  .append("svg")
-  .attr("width", 300)
-  .attr("height", 300);
-
-const data9 = [
-  { language: "JavaScript", percentage: 60 },
-  { language: "React.js", percentage: 30 },
-  { language: "Node.js", percentage: 10 }
-];
-
-const arc9 = d3.arc().innerRadius(0).outerRadius(150);
-const pie9 = d3.pie().value(d => d.percentage);
-
-chart9.selectAll("path")
-  .data(pie9(data9))
-  .enter()
-  .append("path")
-  .attr("d", arc9)
-  .attr("fill", (d, i) => d3.schemeCategory10[i]);
-
-// Project 10: Job Search Web App
-const chart10 = d3.select("#chart10")
-  .append("svg")
-  .attr("width", 300)
-  .attr("height", 300);
-
-const data10 = [
-  { language: "JavaScript", percentage: 50 },
-  { language: "Node.js", percentage: 30 },
-  { language: "MongoDB", percentage: 20 }
-];
-
-const arc10 = d3.arc().innerRadius(0).outerRadius(150);
-const pie10 = d3.pie().value(d => d.percentage);
-
-chart10.selectAll("path")
-  .data(pie10(data10))
-  .enter()
-  .append("path")
-  .attr("d", arc10)
-  .attr("fill", (d, i) => d3.schemeCategory10[i]);
-
+// Project 10: Chatbot Integration
+const ctx10 = document.getElementById('chart10').getContext('2d');
+const chart10 = new Chart(ctx10, {
+  type: 'pie',
+  data: {
+    labels: ['JavaScript', 'Node.js', 'AI/ML', 'HTML/CSS'],
+    datasets: [{
+      label: 'Programming Languages Used',
+      data: [50, 30, 10, 10],
+      backgroundColor: ['#ffb3d9', '#c2e0ff', '#ffebc2', '#d9f7c1'], // Pastel colors
+      borderColor: '#fff',
+      borderWidth: 1
+    }]
+  }
+});

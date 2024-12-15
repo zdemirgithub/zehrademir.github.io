@@ -102,26 +102,47 @@ header nav ul li a:hover {
 
 
 /* Education & Certifications */
-#education-certifications {
-    background-color: #e6f7f8; /* Lighter pastel blue */
+/* General styles for the section container */
+.education-certifications {
+    background-color: #004c6d; /* Dark pastel blue */
+    color: #ffffff; /* White text */
     padding: 20px;
-    border-radius: 8px;
-    margin-top: 40px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.education-certifications h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Sans-Serif', Arial, Helvetica, sans-serif;
 }
 
-ul li {
+/* Styles for the unordered list */
+.education-list, 
+.certifications-list {
+    list-style-type: disc; /* Adds the bullet points (dots) */
+    padding-left: 20px; /* Indent the list items */
+    margin-bottom: 20px;
+}
+
+.education-list li, 
+.certifications-list li {
     font-size: 1rem;
-    margin: 10px 0;
-    color: #004c6d;
+    font-family: 'Sans-Serif', Arial, Helvetica, sans-serif;
+    color: #e0e0e0; /* Light gray color for better readability */
+    margin-bottom: 10px; /* Spacing between list items */
+    line-height: 1.5;
+    position: relative;
 }
 
-h2, ul {
-    transition: all 0.5s ease;
+/* Optional: Custom dot style (if you want to style dots differently) */
+.education-list li::marker, 
+.certifications-list li::marker {
+    color: #b3e5fc; /* Lighter pastel blue for the dot */
+    font-size: 1.2rem;
 }
 
 /* Project Section */
@@ -250,7 +271,7 @@ footer {
     background-color: #004c6d;
 }
 
-/* Mobile Responsiveness */
+/* Responsive design to make sure it fits on smaller screens */
 @media (max-width: 768px) {
     .project-row {
         flex-direction: column;
@@ -268,10 +289,27 @@ footer {
 
     .contact-links {
         flex-direction: column;
+        align-items: center;
     }
 
     .contact-links a {
         margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .education-certifications {
+        padding: 15px;
+    }
+
+    .education-list li, 
+    .certifications-list li {
+        font-size: 0.9rem;
+    }
+
+    .project-card a {
+        width: 100%;
+        text-align: center;
     }
 }
 

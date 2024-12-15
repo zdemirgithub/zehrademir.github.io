@@ -173,18 +173,23 @@ h2, ul {
 
 .learn-more-btn {
     display: inline-block;
+    background-color: #004c6d; /* Dark pastel blue */
+    color: #ffffff; /* White text */
     padding: 10px 20px;
-    background-color: #006f8e;
-    color: white;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 30px; /* Makes the button oval */
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    margin-top: 10px; /* Space between chart and button */
 }
 
 .learn-more-btn:hover {
-    background-color: #004c6d; /* Darker blue */
+    background-color: #006d91; /* Lighter blue on hover */
+    transform: translateY(-3px); /* Moves the button up slightly */
 }
+
 
 /* Contact Section */
 .contact {

@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Comic Sans font */
-    background-color: #b3e5fc; /* Pastel blue background */
+    font-family: 'Ubuntu', sans-serif; /* Set Ubuntu as the default font */
+    background-color: #e0f7fa; /* Light pastel blue */
     color: white;
     margin: 0;
     padding: 0;
@@ -30,12 +30,14 @@ header {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin-bottom: 20px; /* Space between header and the next section */
     text-align: center; /* Center the header content */
+    font-family: 'Ubuntu', sans-serif; /* Ensure Ubuntu font is used in header */
 }
 
 header h1 {
     color: #004c6d; /* Darker pastel blue for the title */
     font-size: 2.5rem;
     margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif; /* Ensure Ubuntu font for title */
 }
 
 header nav ul {
@@ -60,6 +62,7 @@ header nav ul li a {
     border-radius: 30px; /* Makes the buttons oval */
     background-color: #f0f8ff; /* Soft pastel blue background for buttons */
     transition: all 0.3s ease; /* Adds a smooth hover effect */
+    font-family: 'Ubuntu', sans-serif; /* Ensure Ubuntu font for buttons */
 }
 
 header nav ul li a:hover {
@@ -77,12 +80,15 @@ header nav ul li a:hover {
     margin-top: 20px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Subtle animations for hover effects */
+    font-family: 'Ubuntu', sans-serif; /* Ensure Ubuntu font */
 }
 
 .about h2 {
     color: #004c6d; /* Darker pastel blue for the title */
     font-size: 2rem;
     margin-bottom: 20px;
+    text-align: left; /* Align title to the left */
+    font-family: 'Ubuntu', sans-serif; /* Ensure Ubuntu font */
 }
 
 .about p {
@@ -90,19 +96,19 @@ header nav ul li a:hover {
     margin-bottom: 20px;
     color: #333; /* Darker text for contrast */
     text-align: left; /* Align paragraph text to the left */
+    font-family: 'Ubuntu', sans-serif; /* Ensure Ubuntu font */
 }
 
-/* ====== Education & Certifications Styles ====== */
-
-/* General container styles for the section */
+/* Education & Certifications Styles */
 .education-certifications {
-    background-color: #b3e5fc; /* Pastel blue background */
-    color: #004c6d; /* Dark pastel blue text */
+    background-color: #004c6d; /* Dark pastel blue */
+    color: #ffffff; /* White text */
     padding: 25px;
     border-radius: 15px;
     margin-bottom: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif; /* Ensure Ubuntu font */
 }
 
 .education-certifications:hover {
@@ -114,9 +120,8 @@ header nav ul li a:hover {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
-    color: #004c6d;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif; /* Ensure Ubuntu font */
 }
 
 /* Styles for the unordered list of education and certifications */
@@ -130,29 +135,39 @@ header nav ul li a:hover {
 .education-list li,
 .certifications-list li {
     font-size: 1rem;
-    color: #004c6d; /* Dark pastel blue text */
+    font-family: 'Ubuntu', sans-serif; /* Ensure Ubuntu font */
+    color: #e0e0e0; /* Light gray text for readability */
     margin-bottom: 12px; /* Adds space between each list item */
     line-height: 1.6; /* Increases readability with better line height */
     position: relative;
     padding-left: 10px;
+    transition: color 0.2s ease, transform 0.2s ease; /* Animation for hover effect */
 }
 
 .education-list li:hover,
 .certifications-list li:hover {
-    color: #004c6d; /* Keeps the hover color the same */
+    color: #b3e5fc; /* Light pastel blue on hover */
+    transform: translateX(5px); /* Subtle shift on hover */
 }
 
+/* Custom dot style for list items */
 .education-list li::marker,
 .certifications-list li::marker {
-    color: #004c6d; /* Custom dot color */
+    color: #b3e5fc; /* Custom dot color */
     font-size: 1.3rem;
     font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.education-list li:hover::marker,
+.certifications-list li:hover::marker {
+    color: #ffffff; /* Change dot color on hover */
 }
 
 /* Project Section */
 .projects {
     padding: 60px 0;
-    background-color: #b3e5fc; /* Pastel blue background */
+    background-color: #004c6d; /* Dark pastel blue */
     color: white;
     text-align: center;
 }
@@ -165,7 +180,7 @@ header nav ul li a:hover {
 }
 
 .project-card {
-    background-color: #ffffff; /* White background */
+    background-color: #b0e0e6; /* Pastel blue */
     border-radius: 8px;
     padding: 20px;
     flex: 1;
@@ -196,9 +211,28 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.learn-more-btn {
+    display: inline-block;
+    background-color: #004c6d; /* Dark pastel blue */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    border-radius: 30px; /* Makes the button oval */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    margin-top: 10px; /* Space between chart and button */
+}
+
+.learn-more-btn:hover {
+    background-color: #006d91; /* Lighter blue on hover */
+    transform: translateY(-3px); /* Moves the button up slightly */
+}
+
 /* Contact Section */
 .contact {
-    background-color: #b3e5fc; /* Pastel blue background */
+    background-color: #004c6d; /* Dark pastel blue */
     padding: 40px 0;
     text-align: center;
 }
@@ -211,7 +245,7 @@ header nav ul li a:hover {
 
 .contact-links a {
     font-size: 1.1rem;
-    color: #004c6d;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -222,7 +256,7 @@ header nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #004c6d; /* Dark pastel blue */
+    background-color: #006f8e; /* Dark pastel blue */
     padding: 20px;
     text-align: center;
     color: white;
@@ -257,72 +291,39 @@ footer {
 
 /* ====== Responsive Design for Smaller Screens (Max Width: 768px) ====== */
 @media (max-width: 768px) {
+    /* Projects layout adjusts to a single-column layout */
     .project-row {
         flex-direction: column;
         align-items: center;
-        gap: 20px; /* Adds space between stacked elements */
+    }
+
+    /* Education and Certifications sections */
+    .education-certifications {
+        padding: 15px;
+    }
+
+    .about h2 {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        font-size: 1rem;
     }
 
     .project-card {
-        width: 100%; /* Full width for better mobile display */
-        margin-bottom: 20px;
-        border-radius: 12px;
+        min-width: 90%; /* Full-width for smaller screens */
+        margin-bottom: 20px; /* Adds space between cards */
     }
 
-    .container {
-        padding: 15px; /* More padding to avoid edge cramping */
-    }
-
-    .contact-links {
+    /* Navbar becomes a vertical menu */
+    header nav ul {
         flex-direction: column;
-        align-items: center;
-        gap: 10px; /* Space between each link */
+        gap: 10px;
     }
 
-    .contact-links a {
-        margin-bottom: 10px;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        border-radius: 8px;
-        background-color: #004c6d; /* Background to make buttons stand out */
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .contact-links a:hover {
-        background-color: #005f89;
-    }
-
-    .education-certifications {
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 15px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .education-list li,
-    .certifications-list li {
-        font-size: 0.9rem;
-        padding-left: 10px;
-        line-height: 1.4;
-    }
-
-    .project-card a {
-        width: 100%;
-        text-align: center;
-        display: inline-block;
-        padding: 12px 0;
-        font-size: 1rem;
-        background-color: #004c6d;
-        color: #ffffff;
-        border-radius: 8px;
-        text-decoration: none;
-        margin-top: 10px;
-    }
-
-    .project-card a:hover {
-        background-color: #005f89;
+    /* Smaller header text */
+    header h1 {
+        font-size: 1.8rem;
     }
 }
+

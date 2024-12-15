@@ -100,275 +100,93 @@ header nav ul li a:hover {
 }
 
 
-
-/* ====== Education & Certifications Styles ====== */
+/* ====== Articles Section Styles ====== */
 
 /* General container styles for the section */
-.education-certifications {
+.articles-section {
     background-color: #004c6d; /* Dark pastel blue */
     color: #ffffff; /* White text */
-    padding: 25px; 
-    border-radius: 15px; 
-    margin-bottom: 20px; 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Adds shadow for depth */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.education-certifications:hover {
+.articles-section:hover {
     transform: translateY(-5px); /* Subtle lift effect on hover */
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
 
-.education-certifications h2 {
-    font-size: 2rem; 
-    text-align: center; 
-    margin-bottom: 20px; 
-    color: #ffffff; 
-    font-family: 'Sans-Serif', Arial, Helvetica, sans-serif; 
-    letter-spacing: 1px; 
+.articles-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Sans-Serif', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
 }
 
-/* Styles for the unordered list of education and certifications */
-.education-list, 
-.certifications-list {
+/* Styling for the unordered list of articles */
+.articles-list {
     list-style-type: disc; /* Adds bullet points (dots) */
     padding-left: 25px; /* Indent the list items */
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
-.education-list li, 
-.certifications-list li {
-    font-size: 1rem; 
-    font-family: 'Sans-Serif', Arial, Helvetica, sans-serif; 
+.articles-list li {
+    font-size: 1rem; /* Default font size for article list items */
+    font-family: 'Sans-Serif', Arial, Helvetica, sans-serif;
     color: #e0e0e0; /* Light gray text for readability */
-    margin-bottom: 12px; /* Adds space between each list item */
+    margin-bottom: 12px;
     line-height: 1.6; /* Increases readability with better line height */
-    position: relative; 
-    padding-left: 10px; 
+    position: relative;
+    padding-left: 10px;
     transition: color 0.2s ease, transform 0.2s ease; /* Animation for hover effect */
 }
 
-.education-list li:hover, 
-.certifications-list li:hover {
+.articles-list li:hover {
     color: #b3e5fc; /* Light pastel blue on hover */
     transform: translateX(5px); /* Subtle shift on hover */
 }
 
 /* Custom dot style for list items */
-.education-list li::marker, 
-.certifications-list li::marker {
+.articles-list li::marker {
     color: #b3e5fc; /* Custom dot color */
-    font-size: 1.3rem; 
+    font-size: 1.3rem;
     font-weight: bold;
-    transition: color 0.2s ease; 
+    transition: color 0.2s ease;
 }
 
-.education-list li:hover::marker, 
-.certifications-list li:hover::marker {
+.articles-list li:hover::marker {
     color: #ffffff; /* Change dot color on hover */
 }
 
-/* Project Section */
-.projects {
-    padding: 60px 0;
-    background-color: #004c6d; /* Dark pastel blue */
-    color: white;
-    text-align: center;
-}
-
-.project-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin-bottom: 40px;
-}
-
-.project-card {
-    background-color: #b0e0e6; /* Pastel blue */
-    border-radius: 8px;
-    padding: 20px;
-    flex: 1;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-width: 45%;
-}
-
-.project-card h3 {
-    color: #004c6d; /* Darker blue */
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.project-card p {
-    font-size: 1rem;
-    color: #006f8e; /* Medium blue */
-    margin-bottom: 10px;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.project-description {
-    font-size: 1rem;
-    color: #006f8e;
-    margin-bottom: 20px;
-}
-
-.learn-more-btn {
-    display: inline-block;
-    background-color: #004c6d; /* Dark pastel blue */
-    color: #ffffff; /* White text */
-    padding: 10px 20px;
-    border-radius: 30px; /* Makes the button oval */
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    text-align: center;
-    margin-top: 10px; /* Space between chart and button */
-}
-
-.learn-more-btn:hover {
-    background-color: #006d91; /* Lighter blue on hover */
-    transform: translateY(-3px); /* Moves the button up slightly */
-}
-
-
-/* Contact Section */
-.contact {
-    background-color: #004c6d; /* Dark pastel blue */
-    padding: 40px 0;
-    text-align: center;
-}
-
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.contact-links a {
-    font-size: 1.1rem;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-links a:hover {
-    color: #b0e0e6; /* Lighter pastel blue */
-}
-
-/* Footer Styles */
-footer {
-    background-color: #006f8e; /* Dark pastel blue */
-    padding: 20px;
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-}
-
-/* Animations */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-/* Hover Effects for Navigation & Buttons */
-.nav-btn {
-    padding: 10px 20px;
-    border-radius: 30px;
-    color: white;
-    background-color: #006f8e;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.nav-btn:hover {
-    background-color: #004c6d;
-}
-
-/* ====== Responsive Design for Smaller Screens (Max Width: 768px) ====== */
+/* Responsive design */
 @media (max-width: 768px) {
-    /* Projects layout adjusts to a single-column layout */
-    .project-row {
-        flex-direction: column; 
-        align-items: center; 
-        gap: 20px; /* Adds space between stacked elements */
+    .articles-section {
+        padding: 20px;
+        margin-bottom: 20px;
     }
 
-    .project-card {
-        width: 100%; /* Full width for better mobile display */
-        margin-bottom: 20px; 
-        border-radius: 12px; /* Softer corners for mobile design */
-    }
-
-    /* Main content container padding adjustment */
-    .container {
-        padding: 15px; /* More padding to avoid edge cramping */
-    }
-
-    /* Contact links layout for mobile */
-    .contact-links {
-        flex-direction: column; 
-        align-items: center; 
-        gap: 10px; /* Space between each link */
-    }
-
-    .contact-links a {
-        margin-bottom: 10px; 
-        width: 100%; 
-        text-align: center; 
-        padding: 10px 0; 
-        border-radius: 8px; 
-        background-color: #004c6d; /* Background to make buttons stand out */
-        color: #ffffff; 
-        text-decoration: none; 
-        font-weight: bold; 
-        transition: background-color 0.3s ease;
-    }
-
-    .contact-links a:hover {
-        background-color: #005f89; /* Slightly darker blue on hover */
-    }
-
-    /* Education & Certifications Section */
-    .education-certifications {
-        padding: 20px; 
-        margin-bottom: 20px; 
-        border-radius: 15px; 
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
-    }
-
-    .education-list li, 
-    .certifications-list li {
+    .articles-list li {
         font-size: 0.9rem; /* Slightly smaller text for smaller screens */
-        padding-left: 10px; /* Better alignment for list items */
+        padding-left: 8px; /* Better alignment for list items */
         line-height: 1.4; /* Tighter line height to fit more content */
     }
 
-    /* Adjustments for project buttons (like "Learn More" buttons) */
-    .project-card a {
-        width: 100%; 
-        text-align: center; 
-        display: inline-block; 
-        padding: 12px 0; 
-        font-size: 1rem; 
-        background-color: #004c6d; 
-        color: #ffffff; 
-        border-radius: 8px; 
-        text-decoration: none; 
-        margin-top: 10px; 
-        transition: background-color 0.3s ease;
+    .articles-container {
+        display: flex;
+        flex-direction: column;
     }
 
-    .project-card a:hover {
-        background-color: #005f89; /* Slightly darker blue on hover */
+    .articles-container .article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .articles-section h2 {
+        font-size: 1.6rem; /* Adjusted header size for small screens */
     }
 }
+

@@ -58,27 +58,30 @@ nav ul li a:hover {
 }
 
 .about {
-    background-color: #b0e0e6; /* Pastel blue */
-    padding: 40px 20px;
+    background-color: #ffffff; /* White background for the frame */
+    padding: 40px 30px;
     text-align: left; /* Align text to the left */
-    border-radius: 20px;
+    border-radius: 12px; /* Slightly rounded corners */
+    border: 2px solid #004c6d; /* Border with a pastel blue tone */
     margin-top: 20px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Subtle animations for hover effects */
 }
 
 .about h2 {
-    color: #004c6d; /* Darker pastel blue */
+    color: #004c6d; /* Darker pastel blue for the title */
     font-size: 2rem;
     margin-bottom: 20px;
-    text-align: left; /* Ensure the heading is also aligned to the left */
+    text-align: left; /* Align title to the left */
 }
 
 .about p {
     font-size: 1.1rem;
     margin-bottom: 20px;
-    text-align: left; /* Ensure the paragraph is aligned to the left */
+    color: #333; /* Darker text for contrast */
+    text-align: left; /* Align paragraph text to the left */
 }
+
 
 
 /* Education & Certifications */

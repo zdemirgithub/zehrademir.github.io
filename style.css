@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Comic Sans font */
-    background-color: #000080; /* Navy Blue */
+    background-color: #b3e5fc; /* Pastel blue background */
     color: white;
     margin: 0;
     padding: 0;
@@ -23,17 +23,17 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #000080; /* Navy Blue */
+    background-color: #ffffff; /* White background for the header frame */
     padding: 40px 30px;
-    border-radius: 12px;
-    border: 2px solid #004c6d;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    text-align: center;
+    border-radius: 12px; /* Slightly rounded corners */
+    border: 2px solid #004c6d; /* Border with a pastel blue tone */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space between header and the next section */
+    text-align: center; /* Center the header content */
 }
 
 header h1 {
-    color: #ffffff; /* White text for the title */
+    color: #004c6d; /* Darker pastel blue for the title */
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -52,103 +52,107 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #004c6d;
     font-size: 1.1rem;
     font-weight: bold;
-    border: 2px solid #004c6d;
+    border: 2px solid #004c6d; /* Blue border around button */
     padding: 10px 20px;
-    border-radius: 30px;
-    background-color: #004c6d; /* Navy blue background for buttons */
-    transition: all 0.3s ease;
+    border-radius: 30px; /* Makes the buttons oval */
+    background-color: #f0f8ff; /* Soft pastel blue background for buttons */
+    transition: all 0.3s ease; /* Adds a smooth hover effect */
 }
 
 header nav ul li a:hover {
-    background-color: #ffffff;
-    color: #000080;
+    background-color: #004c6d; /* Changes button background on hover */
+    color: #ffffff; /* White text on hover */
 }
 
 /* About Me Styles */
 .about {
-    background-color: #000080; /* Navy Blue */
+    background-color: #ffffff; /* White background for the frame */
     padding: 40px 30px;
-    text-align: left;
-    border-radius: 12px;
-    border: 2px solid #004c6d;
+    text-align: left; /* Align text to the left */
+    border-radius: 12px; /* Slightly rounded corners */
+    border: 2px solid #004c6d; /* Border with a pastel blue tone */
     margin-top: 20px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Subtle animations for hover effects */
 }
 
 .about h2 {
-    color: #ffffff;
+    color: #004c6d; /* Darker pastel blue for the title */
     font-size: 2rem;
     margin-bottom: 20px;
-    text-align: left;
 }
 
 .about p {
     font-size: 1.1rem;
     margin-bottom: 20px;
-    color: #e0e0e0;
-    text-align: left;
+    color: #333; /* Darker text for contrast */
+    text-align: left; /* Align paragraph text to the left */
 }
 
 /* ====== Education & Certifications Styles ====== */
+
+/* General container styles for the section */
 .education-certifications {
-    background-color: #000080; /* Navy Blue */
-    color: #ffffff;
+    background-color: #b3e5fc; /* Pastel blue background */
+    color: #004c6d; /* Dark pastel blue text */
     padding: 25px;
     border-radius: 15px;
     margin-bottom: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.education-certifications:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
 
 .education-certifications h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #004c6d;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    letter-spacing: 1px;
 }
 
-.education-list, 
+/* Styles for the unordered list of education and certifications */
+.education-list,
 .certifications-list {
-    list-style-type: disc;
-    padding-left: 25px;
+    list-style-type: disc; /* Adds bullet points (dots) */
+    padding-left: 25px; /* Indent the list items */
     margin-bottom: 20px;
 }
 
 .education-list li,
 .certifications-list li {
     font-size: 1rem;
-    color: #e0e0e0;
-    margin-bottom: 12px;
-    line-height: 1.6;
+    color: #004c6d; /* Dark pastel blue text */
+    margin-bottom: 12px; /* Adds space between each list item */
+    line-height: 1.6; /* Increases readability with better line height */
+    position: relative;
     padding-left: 10px;
 }
 
 .education-list li:hover,
 .certifications-list li:hover {
-    color: #b3e5fc;
-    transform: translateX(5px);
+    color: #004c6d; /* Keeps the hover color the same */
 }
 
 .education-list li::marker,
 .certifications-list li::marker {
-    color: #b3e5fc;
+    color: #004c6d; /* Custom dot color */
     font-size: 1.3rem;
     font-weight: bold;
-}
-
-.education-list li:hover::marker,
-.certifications-list li:hover::marker {
-    color: #ffffff;
 }
 
 /* Project Section */
 .projects {
     padding: 60px 0;
-    background-color: #000080; /* Navy Blue */
+    background-color: #b3e5fc; /* Pastel blue background */
     color: white;
     text-align: center;
 }
@@ -161,7 +165,7 @@ header nav ul li a:hover {
 }
 
 .project-card {
-    background-color: #004c6d;
+    background-color: #ffffff; /* White background */
     border-radius: 8px;
     padding: 20px;
     flex: 1;
@@ -170,14 +174,14 @@ header nav ul li a:hover {
 }
 
 .project-card h3 {
-    color: #ffffff;
+    color: #004c6d; /* Darker blue */
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .project-card p {
     font-size: 1rem;
-    color: #ffffff;
+    color: #006f8e; /* Medium blue */
     margin-bottom: 10px;
 }
 
@@ -188,32 +192,13 @@ header nav ul li a:hover {
 
 .project-description {
     font-size: 1rem;
-    color: #ffffff;
+    color: #006f8e;
     margin-bottom: 20px;
-}
-
-.learn-more-btn {
-    display: inline-block;
-    background-color: #004c6d;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.learn-more-btn:hover {
-    background-color: #ffffff;
-    color: #000080;
 }
 
 /* Contact Section */
 .contact {
-    background-color: #000080;
+    background-color: #b3e5fc; /* Pastel blue background */
     padding: 40px 0;
     text-align: center;
 }
@@ -226,18 +211,18 @@ header nav ul li a:hover {
 
 .contact-links a {
     font-size: 1.1rem;
-    color: white;
+    color: #004c6d;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .contact-links a:hover {
-    color: #b0e0e6;
+    color: #b0e0e6; /* Lighter pastel blue */
 }
 
 /* Footer Styles */
 footer {
-    background-color: #004c6d;
+    background-color: #004c6d; /* Dark pastel blue */
     padding: 20px;
     text-align: center;
     color: white;
@@ -275,23 +260,23 @@ footer {
     .project-row {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 20px; /* Adds space between stacked elements */
     }
 
     .project-card {
-        width: 100%;
+        width: 100%; /* Full width for better mobile display */
         margin-bottom: 20px;
         border-radius: 12px;
     }
 
     .container {
-        padding: 15px;
+        padding: 15px; /* More padding to avoid edge cramping */
     }
 
     .contact-links {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 10px; /* Space between each link */
     }
 
     .contact-links a {
@@ -300,7 +285,7 @@ footer {
         text-align: center;
         padding: 10px 0;
         border-radius: 8px;
-        background-color: #004c6d;
+        background-color: #004c6d; /* Background to make buttons stand out */
         color: #ffffff;
         text-decoration: none;
         font-weight: bold;
@@ -341,4 +326,3 @@ footer {
         background-color: #005f89;
     }
 }
-

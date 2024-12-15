@@ -57,23 +57,29 @@ nav ul li a:hover {
     background-color: #004c6d; /* Darker blue */
 }
 
-/* About Section */
 .about {
     background-color: #b0e0e6; /* Pastel blue */
-    padding: 40px 0;
-    text-align: center;
+    padding: 40px 20px;
+    text-align: left; /* Align text to the left */
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h2 {
+.about h2 {
     color: #004c6d; /* Darker pastel blue */
     font-size: 2rem;
     margin-bottom: 20px;
+    text-align: left; /* Ensure the heading is also aligned to the left */
 }
 
-p {
+.about p {
     font-size: 1.1rem;
     margin-bottom: 20px;
+    text-align: left; /* Ensure the paragraph is aligned to the left */
 }
+
 
 /* Education & Certifications */
 #education-certifications {

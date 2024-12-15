@@ -21,101 +21,84 @@ body {
     padding: 20px;
 }
 
-/* Header Styles */
-header {
-    background-color: #ffffff; /* White background for the header frame */
-    padding: 40px 30px;
-    border-radius: 12px; /* Slightly rounded corners */
-    border: 2px solid #004c6d; /* Border with a pastel blue tone */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-bottom: 20px; /* Space between header and the next section */
-    text-align: center; /* Center the header content */
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Comic Sans font */
-}
-
-header h1 {
-    color: #004c6d; /* Darker pastel blue for the title */
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Comic Sans font for the title */
-}
-
-header nav ul {
-    list-style: none; 
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #004c6d; 
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: 2px solid #004c6d; /* Blue border around button */
-    padding: 10px 20px;
-    border-radius: 30px; /* Makes the buttons oval */
-    background-color: #f0f8ff; /* Soft pastel blue background for buttons */
-    transition: all 0.3s ease; /* Adds a smooth hover effect */
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Comic Sans font for buttons */
-}
-
-header nav ul li a:hover {
-    background-color: #004c6d; /* Changes button background on hover */
-    color: #ffffff; /* White text on hover */
-}
-
-/* About Me Styles */
-.about {
-    background-color: #ffffff; /* White background for the frame */
-    padding: 40px 30px;
-    text-align: left; /* Align text to the left */
-    border-radius: 12px; /* Slightly rounded corners */
-    border: 2px solid #004c6d; /* Border with a pastel blue tone */
-    margin-top: 20px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Subtle animations for hover effects */
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Comic Sans font */
-}
-
-.about h2 {
-    color: #004c6d; /* Darker pastel blue for the title */
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: left; /* Align title to the left */
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Comic Sans font */
-}
-
-.about p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    color: #333; /* Darker text for contrast */
-    text-align: left; /* Align paragraph text to the left */
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Comic Sans font */
-}
-
-
-/* ====== Articles Section Styles ====== */
+/* ====== Education & Certifications Section ====== */
 
 /* General container styles for the section */
-.articles-section {
+.education-certifications {
     background-color: #004c6d; /* Dark pastel blue */
     color: #ffffff; /* White text */
     padding: 25px;
     border-radius: 15px;
     margin-bottom: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Adds shadow for depth */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between; /* Makes the articles section align to the right */
 }
 
-.articles-section:hover {
+.education-certifications:hover {
     transform: translateY(-5px); /* Subtle lift effect on hover */
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.education-certifications h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Sans-Serif', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Styles for the unordered list of education and certifications */
+.education-list,
+.certifications-list {
+    list-style-type: disc; /* Adds bullet points (dots) */
+    padding-left: 25px; /* Indent the list items */
+    margin-bottom: 20px;
+}
+
+.education-list li,
+.certifications-list li {
+    font-size: 1rem;
+    font-family: 'Sans-Serif', Arial, Helvetica, sans-serif;
+    color: #e0e0e0; /* Light gray text for readability */
+    margin-bottom: 12px;
+    line-height: 1.6; /* Increases readability with better line height */
+    position: relative;
+    padding-left: 10px;
+    transition: color 0.2s ease, transform 0.2s ease; /* Animation for hover effect */
+}
+
+.education-list li:hover,
+.certifications-list li:hover {
+    color: #b3e5fc; /* Light pastel blue on hover */
+    transform: translateX(5px); /* Subtle shift on hover */
+}
+
+/* Custom dot style for list items */
+.education-list li::marker,
+.certifications-list li::marker {
+    color: #b3e5fc; /* Custom dot color */
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.education-list li:hover::marker,
+.certifications-list li:hover::marker {
+    color: #ffffff; /* Change dot color on hover */
+}
+
+/* Articles Section (Near Education & Certifications Section) */
+.articles-section {
+    background-color: #004c6d; /* Dark pastel blue */
+    color: #ffffff; /* White text */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    width: 45%; /* Ensures it fits on the right */
 }
 
 .articles-section h2 {
@@ -127,7 +110,6 @@ header nav ul li a:hover {
     letter-spacing: 1px;
 }
 
-/* Styling for the unordered list of articles */
 .articles-list {
     list-style-type: disc; /* Adds bullet points (dots) */
     padding-left: 25px; /* Indent the list items */
@@ -135,58 +117,59 @@ header nav ul li a:hover {
 }
 
 .articles-list li {
-    font-size: 1rem; /* Default font size for article list items */
+    font-size: 1rem;
     font-family: 'Sans-Serif', Arial, Helvetica, sans-serif;
-    color: #e0e0e0; /* Light gray text for readability */
+    color: #e0e0e0;
     margin-bottom: 12px;
-    line-height: 1.6; /* Increases readability with better line height */
+    line-height: 1.6;
     position: relative;
     padding-left: 10px;
-    transition: color 0.2s ease, transform 0.2s ease; /* Animation for hover effect */
 }
 
 .articles-list li:hover {
     color: #b3e5fc; /* Light pastel blue on hover */
-    transform: translateX(5px); /* Subtle shift on hover */
 }
 
-/* Custom dot style for list items */
+/* Custom dot style for articles list */
 .articles-list li::marker {
-    color: #b3e5fc; /* Custom dot color */
+    color: #b3e5fc; /* Lighter pastel blue for the dot */
     font-size: 1.3rem;
-    font-weight: bold;
-    transition: color 0.2s ease;
 }
 
-.articles-list li:hover::marker {
-    color: #ffffff; /* Change dot color on hover */
-}
-
-/* Responsive design */
+/* ====== Responsive Design for Smaller Screens (Max Width: 768px) ====== */
 @media (max-width: 768px) {
+    .education-certifications {
+        flex-direction: column; /* Stacks the education and articles sections vertically */
+    }
+
     .articles-section {
-        padding: 20px;
-        margin-bottom: 20px;
+        width: 100%; /* Full width on mobile */
+        margin-top: 20px; /* Adds spacing between sections */
     }
 
-    .articles-list li {
+    .education-list li,
+    .certifications-list li {
         font-size: 0.9rem; /* Slightly smaller text for smaller screens */
-        padding-left: 8px; /* Better alignment for list items */
-        line-height: 1.4; /* Tighter line height to fit more content */
+        padding-left: 10px; /* Better alignment for list items */
+        line-height: 1.4;
     }
 
-    .articles-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .articles-container .article {
+    /* Adjustments for project buttons (like "Learn More" buttons) */
+    .project-card a {
         width: 100%;
-        margin-bottom: 20px;
+        text-align: center;
+        display: inline-block;
+        padding: 12px 0;
+        font-size: 1rem;
+        background-color: #004c6d;
+        color: #ffffff;
+        border-radius: 8px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
     }
 
-    .articles-section h2 {
-        font-size: 1.6rem; /* Adjusted header size for small screens */
+    .project-card a:hover {
+        background-color: #005f89; /* Slightly darker blue on hover */
     }
 }
-
